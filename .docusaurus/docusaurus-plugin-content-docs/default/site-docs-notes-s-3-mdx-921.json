@@ -1,0 +1,21 @@
+{
+  "unversionedId": "notes_s3",
+  "id": "notes_s3",
+  "isDocsHomePage": false,
+  "title": "S3",
+  "description": "export const Highlight = ({ children, color }) => (",
+  "source": "@site/docs/notes_s3.mdx",
+  "slug": "/notes_s3",
+  "permalink": "/FAQ/docs/notes_s3",
+  "version": "current",
+  "sidebar_label": "S3",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "FSx",
+    "permalink": "/FAQ/docs/notes_fsx"
+  },
+  "next": {
+    "title": "Storage Extras",
+    "permalink": "/FAQ/docs/notes_storage_ex"
+  }
+}

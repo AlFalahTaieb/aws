@@ -1,0 +1,21 @@
+{
+  "unversionedId": "notes_iam",
+  "id": "notes_iam",
+  "isDocsHomePage": false,
+  "title": "IAM",
+  "description": "export const Highlight = ({ children, color }) => (",
+  "source": "@site/docs/notes_iam.mdx",
+  "slug": "/notes_iam",
+  "permalink": "/FAQ/docs/notes_iam",
+  "version": "current",
+  "sidebar_label": "IAM",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Security Groups",
+    "permalink": "/FAQ/docs/notes_sg"
+  },
+  "next": {
+    "title": "EC2",
+    "permalink": "/FAQ/docs/notes_ec2"
+  }
+}

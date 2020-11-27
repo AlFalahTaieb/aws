@@ -1,0 +1,21 @@
+{
+  "unversionedId": "notes_ec2",
+  "id": "notes_ec2",
+  "isDocsHomePage": false,
+  "title": "EC2",
+  "description": "export const Highlight = ({ children, color }) => (",
+  "source": "@site/docs/notes_ec2.mdx",
+  "slug": "/notes_ec2",
+  "permalink": "/FAQ/docs/notes_ec2",
+  "version": "current",
+  "sidebar_label": "EC2",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "IAM",
+    "permalink": "/FAQ/docs/notes_iam"
+  },
+  "next": {
+    "title": "ASG",
+    "permalink": "/FAQ/docs/notes_asg"
+  }
+}

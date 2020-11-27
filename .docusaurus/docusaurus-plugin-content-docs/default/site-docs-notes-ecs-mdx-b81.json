@@ -1,0 +1,20 @@
+{
+  "unversionedId": "notes_ecs",
+  "id": "notes_ecs",
+  "isDocsHomePage": false,
+  "title": "ECS",
+  "description": "export const Quote = ({ children, color }) => (",
+  "source": "@site/docs/notes_ecs.mdx",
+  "slug": "/notes_ecs",
+  "permalink": "/FAQ/docs/notes_ecs",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "VPC",
+    "permalink": "/FAQ/docs/notes_vpc"
+  },
+  "next": {
+    "title": "CloudFormation",
+    "permalink": "/FAQ/docs/notes_cfm"
+  }
+}

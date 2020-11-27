@@ -1,0 +1,12 @@
+{
+  "unversionedId": "notes_databases",
+  "id": "notes_databases",
+  "isDocsHomePage": false,
+  "title": "Databases",
+  "description": "export const StyledButton = withStyles({",
+  "source": "@site/docs/notes_databases.mdx",
+  "slug": "/notes_databases",
+  "permalink": "/FAQ/docs/notes_databases",
+  "version": "current",
+  "sidebar_label": "Databases"
+}

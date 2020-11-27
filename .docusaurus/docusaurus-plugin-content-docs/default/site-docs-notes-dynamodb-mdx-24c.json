@@ -1,0 +1,21 @@
+{
+  "unversionedId": "notes_dynamodb",
+  "id": "notes_dynamodb",
+  "isDocsHomePage": false,
+  "title": "DynamoDB",
+  "description": "export const Quote = ({ children, color }) => (",
+  "source": "@site/docs/notes_dynamodb.mdx",
+  "slug": "/notes_dynamodb",
+  "permalink": "/FAQ/docs/notes_dynamodb",
+  "version": "current",
+  "sidebar_label": "DynamoDB",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Lambda",
+    "permalink": "/FAQ/docs/notes_lambda"
+  },
+  "next": {
+    "title": "API Gateway",
+    "permalink": "/FAQ/docs/notes_apig"
+  }
+}

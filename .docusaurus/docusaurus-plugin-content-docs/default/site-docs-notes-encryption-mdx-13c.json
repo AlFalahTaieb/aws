@@ -1,0 +1,12 @@
+{
+  "unversionedId": "notes_Encryption",
+  "id": "notes_Encryption",
+  "isDocsHomePage": false,
+  "title": "Encryption",
+  "description": "export const Highlight = ({ children, color }) => (",
+  "source": "@site/docs/notes_encryption.mdx",
+  "slug": "/notes_Encryption",
+  "permalink": "/FAQ/docs/notes_Encryption",
+  "version": "current",
+  "sidebar_label": "Encryption"
+}

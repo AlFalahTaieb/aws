@@ -1,0 +1,20 @@
+{
+  "unversionedId": "notes_ss",
+  "id": "notes_ss",
+  "isDocsHomePage": false,
+  "title": "SWF & Step Function",
+  "description": "export const Quote = ({ children, color }) => (",
+  "source": "@site/docs/notes_ss.mdx",
+  "slug": "/notes_ss",
+  "permalink": "/FAQ/docs/notes_ss",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "CloudFormation",
+    "permalink": "/FAQ/docs/notes_cfm"
+  },
+  "next": {
+    "title": "Other Services",
+    "permalink": "/FAQ/docs/notes_os"
+  }
+}

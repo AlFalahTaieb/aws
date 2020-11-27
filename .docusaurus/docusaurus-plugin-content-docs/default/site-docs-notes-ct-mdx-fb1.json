@@ -1,0 +1,20 @@
+{
+  "unversionedId": "notes_ct",
+  "id": "notes_ct",
+  "isDocsHomePage": false,
+  "title": "CloudTrail",
+  "description": "I. CloudTrail",
+  "source": "@site/docs/notes_ct.mdx",
+  "slug": "/notes_ct",
+  "permalink": "/FAQ/docs/notes_ct",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "CloudWAtch",
+    "permalink": "/FAQ/docs/notes_cw"
+  },
+  "next": {
+    "title": "KMS",
+    "permalink": "/FAQ/docs/notes_kms"
+  }
+}

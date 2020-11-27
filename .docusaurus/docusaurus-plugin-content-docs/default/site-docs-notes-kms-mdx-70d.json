@@ -1,0 +1,21 @@
+{
+  "unversionedId": "notes_kms",
+  "id": "notes_kms",
+  "isDocsHomePage": false,
+  "title": "KMS",
+  "description": "export const Quote = ({ children, color }) => (",
+  "source": "@site/docs/notes_kms.mdx",
+  "slug": "/notes_kms",
+  "permalink": "/FAQ/docs/notes_kms",
+  "version": "current",
+  "sidebar_label": "KMS",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "CloudTrail",
+    "permalink": "/FAQ/docs/notes_ct"
+  },
+  "next": {
+    "title": "SSM",
+    "permalink": "/FAQ/docs/notes_ssm"
+  }
+}

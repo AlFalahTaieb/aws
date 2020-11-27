@@ -1,0 +1,20 @@
+{
+  "unversionedId": "notes_hpc",
+  "id": "notes_hpc",
+  "isDocsHomePage": false,
+  "title": "HPC",
+  "description": "export const Quote = ({ children, color }) => (",
+  "source": "@site/docs/notes_hpc.mdx",
+  "slug": "/notes_hpc",
+  "permalink": "/FAQ/docs/notes_hpc",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Disaster Recovery",
+    "permalink": "/FAQ/docs/notes_dr"
+  },
+  "next": {
+    "title": "Five Pillars",
+    "permalink": "/FAQ/docs/notes_fp"
+  }
+}

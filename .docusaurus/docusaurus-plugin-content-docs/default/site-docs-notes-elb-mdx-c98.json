@@ -1,0 +1,21 @@
+{
+  "unversionedId": "notes_elb",
+  "id": "notes_elb",
+  "isDocsHomePage": false,
+  "title": "ELB",
+  "description": "export const Highlight = ({ children, color }) => (",
+  "source": "@site/docs/notes_elb.mdx",
+  "slug": "/notes_elb",
+  "permalink": "/FAQ/docs/notes_elb",
+  "version": "current",
+  "sidebar_label": "ELB",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "ASG",
+    "permalink": "/FAQ/docs/notes_asg"
+  },
+  "next": {
+    "title": "EBS & EFS",
+    "permalink": "/FAQ/docs/notes_ebs_efs"
+  }
+}

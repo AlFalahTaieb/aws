@@ -1,0 +1,21 @@
+{
+  "unversionedId": "notes_sqs",
+  "id": "notes_sqs",
+  "isDocsHomePage": false,
+  "title": "SQS",
+  "description": "export const Quote = ({ children, color }) => (",
+  "source": "@site/docs/notes_sqs.mdx",
+  "slug": "/notes_sqs",
+  "permalink": "/FAQ/docs/notes_sqs",
+  "version": "current",
+  "sidebar_label": "SQS",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "BeanStalk",
+    "permalink": "/FAQ/docs/notes_bs"
+  },
+  "next": {
+    "title": "SNS",
+    "permalink": "/FAQ/docs/notes_sns"
+  }
+}

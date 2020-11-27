@@ -1,0 +1,12 @@
+{
+  "unversionedId": "notes_multiaz",
+  "id": "notes_multiaz",
+  "isDocsHomePage": false,
+  "title": "Multi AZ",
+  "description": "export const StyledButton = withStyles({",
+  "source": "@site/docs/notes_multiaz.mdx",
+  "slug": "/notes_multiaz",
+  "permalink": "/FAQ/docs/notes_multiaz",
+  "version": "current",
+  "sidebar_label": "Multi AZ"
+}

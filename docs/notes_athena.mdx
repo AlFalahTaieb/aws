@@ -1,0 +1,50 @@
+---
+id: notes_athena
+title: Athena
+sidebar_label: Athena
+---
+
+
+export const Highlight = ({ children, color }) => (
+	<span
+		style={{
+			backgroundColor: "#FF9900",
+			borderRadius: "5px",
+			color: "#fff",
+			padding: "0.1rem",
+		}}
+	>
+		{children}
+	</span>
+)
+
+export const Quote = ({ children, color }) => (
+	<span
+		style={{
+			backgroundColor: "#5a5a5a",
+			borderRadius: "7px",
+			color: "#FF9900",
+			padding: "0.3rem",
+		}}
+	>
+		{children}
+	</span>
+)
+
+
+## I. Introduction
+
+1. Serverless offering to perform analytics directly against S3 files.
+2. Uses SQL to query the files, supports JDBC/ODBC driver.
+3. **Charged per query and amount of data scanned.**
+4. **Supports CSV, JSON, ORC, Avro and Parquet.**
+5. It's built on top of Presto.
+6. Used in BI scenarios and log management.
+
+## II. Athena for SA
+
+1. Operations: serverless so not needed
+2. Security: IAM + S3 managed
+3. Reliability: managed service, uses Presto, HA
+4. Performance: queries scale based on size
+5. Cost: pay per query and per TB of data scanned

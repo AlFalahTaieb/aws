@@ -1,0 +1,21 @@
+{
+  "unversionedId": "notes_ebs_efs",
+  "id": "notes_ebs_efs",
+  "isDocsHomePage": false,
+  "title": "EBS & EFS",
+  "description": "export const Highlight = ({ children, color }) => (",
+  "source": "@site/docs/notes_ebs_efs.mdx",
+  "slug": "/notes_ebs_efs",
+  "permalink": "/FAQ/docs/notes_ebs_efs",
+  "version": "current",
+  "sidebar_label": "EBS & EFS",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "ELB",
+    "permalink": "/FAQ/docs/notes_elb"
+  },
+  "next": {
+    "title": "FSx",
+    "permalink": "/FAQ/docs/notes_fsx"
+  }
+}

@@ -1,0 +1,1289 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "loadedVersions": [
+        {
+          "versionName": "current",
+          "versionLabel": "Next",
+          "versionPath": "/FAQ/docs",
+          "isLast": true,
+          "routePriority": -1,
+          "sidebarFilePath": "/home/taieb/Bureau/aws/sidebars.js",
+          "docsDirPath": "/home/taieb/Bureau/aws/docs",
+          "mainDocId": "start",
+          "sidebars": {
+            "someSidebar": [
+              {
+                "collapsed": true,
+                "type": "category",
+                "label": "AWS Certified Solutions Architect Guide",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "start"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "raz"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "notes_sg"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "notes_iam"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "notes_ec2"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "notes_asg"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "notes_elb"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "notes_ebs_efs"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "notes_fsx"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "notes_s3"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "notes_storage_ex"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "notes_athena"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "notes_datasync"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "notes_cli_sdk"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "notes_rds"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "notes_redshift"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "notes_lambda"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "notes_dynamodb"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "notes_apig"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "notes_cognito"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "notes_ec"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "notes_r53"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "notes_cf"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "notes_bs"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "notes_sqs"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "notes_sns"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "notes_kenesis"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "notes_cw"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "notes_ct"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "notes_kms"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "notes_ssm"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "notes_sw"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "notes_vpc"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "notes_ecs"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "notes_cfm"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "notes_ss"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "notes_os"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "notes_dr"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "notes_hpc"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "notes_fp"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "notes"
+                  }
+                ]
+              }
+            ]
+          },
+          "permalinkToSidebar": {
+            "/FAQ/docs/notes": "someSidebar",
+            "/FAQ/docs/notes_apig": "someSidebar",
+            "/FAQ/docs/notes_asg": "someSidebar",
+            "/FAQ/docs/notes_athena": "someSidebar",
+            "/FAQ/docs/notes_bs": "someSidebar",
+            "/FAQ/docs/notes_cf": "someSidebar",
+            "/FAQ/docs/notes_cfm": "someSidebar",
+            "/FAQ/docs/notes_cli_sdk": "someSidebar",
+            "/FAQ/docs/notes_cognito": "someSidebar",
+            "/FAQ/docs/notes_ct": "someSidebar",
+            "/FAQ/docs/notes_cw": "someSidebar",
+            "/FAQ/docs/notes_datasync": "someSidebar",
+            "/FAQ/docs/notes_dr": "someSidebar",
+            "/FAQ/docs/notes_dynamodb": "someSidebar",
+            "/FAQ/docs/notes_ebs_efs": "someSidebar",
+            "/FAQ/docs/notes_ec": "someSidebar",
+            "/FAQ/docs/notes_ec2": "someSidebar",
+            "/FAQ/docs/notes_ecs": "someSidebar",
+            "/FAQ/docs/notes_elb": "someSidebar",
+            "/FAQ/docs/notes_fp": "someSidebar",
+            "/FAQ/docs/notes_fsx": "someSidebar",
+            "/FAQ/docs/notes_hpc": "someSidebar",
+            "/FAQ/docs/notes_iam": "someSidebar",
+            "/FAQ/docs/notes_kenesis": "someSidebar",
+            "/FAQ/docs/notes_kms": "someSidebar",
+            "/FAQ/docs/notes_lambda": "someSidebar",
+            "/FAQ/docs/notes_os": "someSidebar",
+            "/FAQ/docs/notes_r53": "someSidebar",
+            "/FAQ/docs/notes_rds": "someSidebar",
+            "/FAQ/docs/notes_redshift": "someSidebar",
+            "/FAQ/docs/notes_s3": "someSidebar",
+            "/FAQ/docs/notes_sg": "someSidebar",
+            "/FAQ/docs/notes_sns": "someSidebar",
+            "/FAQ/docs/notes_sqs": "someSidebar",
+            "/FAQ/docs/notes_ss": "someSidebar",
+            "/FAQ/docs/notes_ssm": "someSidebar",
+            "/FAQ/docs/notes_storage_ex": "someSidebar",
+            "/FAQ/docs/notes_sw": "someSidebar",
+            "/FAQ/docs/notes_vpc": "someSidebar",
+            "/FAQ/docs/raz": "someSidebar",
+            "/FAQ/docs/start": "someSidebar"
+          },
+          "docs": [
+            {
+              "unversionedId": "aks",
+              "id": "aks",
+              "isDocsHomePage": false,
+              "title": "Amazon Kinesis Data Streams FAQs",
+              "description": "Q: What happens to my data when an Amazon EC2 instance terminates?",
+              "source": "@site/docs/aks.md",
+              "slug": "/aks",
+              "permalink": "/FAQ/docs/aks",
+              "version": "current",
+              "sidebar_label": "Amazon Kinesis Data Streams FAQs"
+            },
+            {
+              "unversionedId": "doc5",
+              "id": "doc5",
+              "isDocsHomePage": false,
+              "title": "doc5",
+              "description": "",
+              "source": "@site/docs/doc5.md",
+              "slug": "/doc5",
+              "permalink": "/FAQ/docs/doc5",
+              "version": "current"
+            },
+            {
+              "unversionedId": "ebs",
+              "id": "ebs",
+              "isDocsHomePage": false,
+              "title": "Amazon EBS FAQs",
+              "description": "Q: What happens to my data when an Amazon EC2 instance terminates?",
+              "source": "@site/docs/EBS.md",
+              "slug": "/ebs",
+              "permalink": "/FAQ/docs/ebs",
+              "version": "current",
+              "sidebar_label": "Amazon EBS FAQs"
+            },
+            {
+              "unversionedId": "ec2",
+              "id": "ec2",
+              "isDocsHomePage": false,
+              "title": "Amazon EC2 FAQs",
+              "description": "Q: What is Amazon Elastic Compute Cloud (Amazon EC2)?",
+              "source": "@site/docs/ec2.md",
+              "slug": "/ec2",
+              "permalink": "/FAQ/docs/ec2",
+              "version": "current",
+              "sidebar_label": "Amazon EC2 FAQs"
+            },
+            {
+              "unversionedId": "notes",
+              "id": "notes",
+              "isDocsHomePage": false,
+              "title": "Notes for AWS Certified Solutions Architect Associate",
+              "description": "Contents",
+              "source": "@site/docs/notes.md",
+              "slug": "/notes",
+              "permalink": "/FAQ/docs/notes",
+              "version": "current",
+              "sidebar_label": "Notes for AWS Certified Solutions Architect Associate",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "Five Pillars",
+                "permalink": "/FAQ/docs/notes_fp"
+              }
+            },
+            {
+              "unversionedId": "notes_apig",
+              "id": "notes_apig",
+              "isDocsHomePage": false,
+              "title": "API Gateway",
+              "description": "export const Quote = ({ children, color }) => (",
+              "source": "@site/docs/notes_apig.mdx",
+              "slug": "/notes_apig",
+              "permalink": "/FAQ/docs/notes_apig",
+              "version": "current",
+              "sidebar_label": "API Gateway",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "DynamoDB",
+                "permalink": "/FAQ/docs/notes_dynamodb"
+              },
+              "next": {
+                "title": "Cognito",
+                "permalink": "/FAQ/docs/notes_cognito"
+              }
+            },
+            {
+              "unversionedId": "notes_asg",
+              "id": "notes_asg",
+              "isDocsHomePage": false,
+              "title": "ASG",
+              "description": "export const Highlight = ({ children, color }) => (",
+              "source": "@site/docs/notes_asg.mdx",
+              "slug": "/notes_asg",
+              "permalink": "/FAQ/docs/notes_asg",
+              "version": "current",
+              "sidebar_label": "ASG",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "EC2",
+                "permalink": "/FAQ/docs/notes_ec2"
+              },
+              "next": {
+                "title": "ELB",
+                "permalink": "/FAQ/docs/notes_elb"
+              }
+            },
+            {
+              "unversionedId": "notes_athena",
+              "id": "notes_athena",
+              "isDocsHomePage": false,
+              "title": "Athena",
+              "description": "export const Highlight = ({ children, color }) => (",
+              "source": "@site/docs/notes_athena.mdx",
+              "slug": "/notes_athena",
+              "permalink": "/FAQ/docs/notes_athena",
+              "version": "current",
+              "sidebar_label": "Athena",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "Storage Extras",
+                "permalink": "/FAQ/docs/notes_storage_ex"
+              },
+              "next": {
+                "title": "DataSync",
+                "permalink": "/FAQ/docs/notes_datasync"
+              }
+            },
+            {
+              "unversionedId": "notes_Aurora",
+              "id": "notes_Aurora",
+              "isDocsHomePage": false,
+              "title": "Aurora",
+              "description": "export const StyledButton = withStyles({",
+              "source": "@site/docs/notes_aurora.mdx",
+              "slug": "/notes_Aurora",
+              "permalink": "/FAQ/docs/notes_Aurora",
+              "version": "current",
+              "sidebar_label": "Aurora"
+            },
+            {
+              "unversionedId": "notes_backups",
+              "id": "notes_backups",
+              "isDocsHomePage": false,
+              "title": "Backups",
+              "description": "export const StyledButton = withStyles({",
+              "source": "@site/docs/notes_backups.mdx",
+              "slug": "/notes_backups",
+              "permalink": "/FAQ/docs/notes_backups",
+              "version": "current",
+              "sidebar_label": "Backups"
+            },
+            {
+              "unversionedId": "notes_bs",
+              "id": "notes_bs",
+              "isDocsHomePage": false,
+              "title": "BeanStalk",
+              "description": "export const Quote = ({ children, color }) => (",
+              "source": "@site/docs/notes_bs.mdx",
+              "slug": "/notes_bs",
+              "permalink": "/FAQ/docs/notes_bs",
+              "version": "current",
+              "sidebar_label": "BeanStalk",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "CloudFront",
+                "permalink": "/FAQ/docs/notes_cf"
+              },
+              "next": {
+                "title": "SQS",
+                "permalink": "/FAQ/docs/notes_sqs"
+              }
+            },
+            {
+              "unversionedId": "notes_cf",
+              "id": "notes_cf",
+              "isDocsHomePage": false,
+              "title": "CloudFront",
+              "description": "export const Quote = ({ children, color }) => (",
+              "source": "@site/docs/notes_cf.mdx",
+              "slug": "/notes_cf",
+              "permalink": "/FAQ/docs/notes_cf",
+              "version": "current",
+              "sidebar_label": "CloudFront",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "Route 53",
+                "permalink": "/FAQ/docs/notes_r53"
+              },
+              "next": {
+                "title": "BeanStalk",
+                "permalink": "/FAQ/docs/notes_bs"
+              }
+            },
+            {
+              "unversionedId": "notes_cfm",
+              "id": "notes_cfm",
+              "isDocsHomePage": false,
+              "title": "CloudFormation",
+              "description": "export const Quote = ({ children, color }) => (",
+              "source": "@site/docs/notes_cfm.mdx",
+              "slug": "/notes_cfm",
+              "permalink": "/FAQ/docs/notes_cfm",
+              "version": "current",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "ECS",
+                "permalink": "/FAQ/docs/notes_ecs"
+              },
+              "next": {
+                "title": "SWF & Step Function",
+                "permalink": "/FAQ/docs/notes_ss"
+              }
+            },
+            {
+              "unversionedId": "notes_cli_sdk",
+              "id": "notes_cli_sdk",
+              "isDocsHomePage": false,
+              "title": "CLI & SDK",
+              "description": "export const Highlight = ({ children, color }) => (",
+              "source": "@site/docs/notes_cli_sdk.mdx",
+              "slug": "/notes_cli_sdk",
+              "permalink": "/FAQ/docs/notes_cli_sdk",
+              "version": "current",
+              "sidebar_label": "CLI & SDK",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "DataSync",
+                "permalink": "/FAQ/docs/notes_datasync"
+              },
+              "next": {
+                "title": "RDS",
+                "permalink": "/FAQ/docs/notes_rds"
+              }
+            },
+            {
+              "unversionedId": "notes_cloudtrail",
+              "id": "notes_cloudtrail",
+              "isDocsHomePage": false,
+              "title": "CloudTrail",
+              "description": "export const Quote = ({ children, color }) => (",
+              "source": "@site/docs/notes_cloudtail.mdx",
+              "slug": "/notes_cloudtrail",
+              "permalink": "/FAQ/docs/notes_cloudtrail",
+              "version": "current",
+              "sidebar_label": "CloudTrail"
+            },
+            {
+              "unversionedId": "notes_cognito",
+              "id": "notes_cognito",
+              "isDocsHomePage": false,
+              "title": "Cognito",
+              "description": "export const Quote = ({ children, color }) => (",
+              "source": "@site/docs/notes_cognito.mdx",
+              "slug": "/notes_cognito",
+              "permalink": "/FAQ/docs/notes_cognito",
+              "version": "current",
+              "sidebar_label": "Cognito",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "API Gateway",
+                "permalink": "/FAQ/docs/notes_apig"
+              },
+              "next": {
+                "title": "ElastiCache",
+                "permalink": "/FAQ/docs/notes_ec"
+              }
+            },
+            {
+              "unversionedId": "notes_ct",
+              "id": "notes_ct",
+              "isDocsHomePage": false,
+              "title": "CloudTrail",
+              "description": "I. CloudTrail",
+              "source": "@site/docs/notes_ct.mdx",
+              "slug": "/notes_ct",
+              "permalink": "/FAQ/docs/notes_ct",
+              "version": "current",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "CloudWAtch",
+                "permalink": "/FAQ/docs/notes_cw"
+              },
+              "next": {
+                "title": "KMS",
+                "permalink": "/FAQ/docs/notes_kms"
+              }
+            },
+            {
+              "unversionedId": "notes_cw",
+              "id": "notes_cw",
+              "isDocsHomePage": false,
+              "title": "CloudWAtch",
+              "description": "export const Quote = ({ children, color }) => (",
+              "source": "@site/docs/notes_cw.mdx",
+              "slug": "/notes_cw",
+              "permalink": "/FAQ/docs/notes_cw",
+              "version": "current",
+              "sidebar_label": "CloudWAtch",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "Kenesis",
+                "permalink": "/FAQ/docs/notes_kenesis"
+              },
+              "next": {
+                "title": "CloudTrail",
+                "permalink": "/FAQ/docs/notes_ct"
+              }
+            },
+            {
+              "unversionedId": "notes_databases",
+              "id": "notes_databases",
+              "isDocsHomePage": false,
+              "title": "Databases",
+              "description": "export const StyledButton = withStyles({",
+              "source": "@site/docs/notes_databases.mdx",
+              "slug": "/notes_databases",
+              "permalink": "/FAQ/docs/notes_databases",
+              "version": "current",
+              "sidebar_label": "Databases"
+            },
+            {
+              "unversionedId": "notes_datasync",
+              "id": "notes_datasync",
+              "isDocsHomePage": false,
+              "title": "DataSync",
+              "description": "export const Highlight = ({ children, color }) => (",
+              "source": "@site/docs/notes_datasync.mdx",
+              "slug": "/notes_datasync",
+              "permalink": "/FAQ/docs/notes_datasync",
+              "version": "current",
+              "sidebar_label": "DataSync",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "Athena",
+                "permalink": "/FAQ/docs/notes_athena"
+              },
+              "next": {
+                "title": "CLI & SDK",
+                "permalink": "/FAQ/docs/notes_cli_sdk"
+              }
+            },
+            {
+              "unversionedId": "notes_dr",
+              "id": "notes_dr",
+              "isDocsHomePage": false,
+              "title": "Disaster Recovery",
+              "description": "export const Quote = ({ children, color }) => (",
+              "source": "@site/docs/notes_dr.mdx",
+              "slug": "/notes_dr",
+              "permalink": "/FAQ/docs/notes_dr",
+              "version": "current",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "Other Services",
+                "permalink": "/FAQ/docs/notes_os"
+              },
+              "next": {
+                "title": "HPC",
+                "permalink": "/FAQ/docs/notes_hpc"
+              }
+            },
+            {
+              "unversionedId": "notes_dynamodb",
+              "id": "notes_dynamodb",
+              "isDocsHomePage": false,
+              "title": "DynamoDB",
+              "description": "export const Quote = ({ children, color }) => (",
+              "source": "@site/docs/notes_dynamodb.mdx",
+              "slug": "/notes_dynamodb",
+              "permalink": "/FAQ/docs/notes_dynamodb",
+              "version": "current",
+              "sidebar_label": "DynamoDB",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "Lambda",
+                "permalink": "/FAQ/docs/notes_lambda"
+              },
+              "next": {
+                "title": "API Gateway",
+                "permalink": "/FAQ/docs/notes_apig"
+              }
+            },
+            {
+              "unversionedId": "notes_ebs_efs",
+              "id": "notes_ebs_efs",
+              "isDocsHomePage": false,
+              "title": "EBS & EFS",
+              "description": "export const Highlight = ({ children, color }) => (",
+              "source": "@site/docs/notes_ebs_efs.mdx",
+              "slug": "/notes_ebs_efs",
+              "permalink": "/FAQ/docs/notes_ebs_efs",
+              "version": "current",
+              "sidebar_label": "EBS & EFS",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "ELB",
+                "permalink": "/FAQ/docs/notes_elb"
+              },
+              "next": {
+                "title": "FSx",
+                "permalink": "/FAQ/docs/notes_fsx"
+              }
+            },
+            {
+              "unversionedId": "notes_ec",
+              "id": "notes_ec",
+              "isDocsHomePage": false,
+              "title": "ElastiCache",
+              "description": "export const Quote = ({ children, color }) => (",
+              "source": "@site/docs/notes_ec.mdx",
+              "slug": "/notes_ec",
+              "permalink": "/FAQ/docs/notes_ec",
+              "version": "current",
+              "sidebar_label": "ElastiCache",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "Cognito",
+                "permalink": "/FAQ/docs/notes_cognito"
+              },
+              "next": {
+                "title": "Route 53",
+                "permalink": "/FAQ/docs/notes_r53"
+              }
+            },
+            {
+              "unversionedId": "notes_ec2",
+              "id": "notes_ec2",
+              "isDocsHomePage": false,
+              "title": "EC2",
+              "description": "export const Highlight = ({ children, color }) => (",
+              "source": "@site/docs/notes_ec2.mdx",
+              "slug": "/notes_ec2",
+              "permalink": "/FAQ/docs/notes_ec2",
+              "version": "current",
+              "sidebar_label": "EC2",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "IAM",
+                "permalink": "/FAQ/docs/notes_iam"
+              },
+              "next": {
+                "title": "ASG",
+                "permalink": "/FAQ/docs/notes_asg"
+              }
+            },
+            {
+              "unversionedId": "notes_ecs",
+              "id": "notes_ecs",
+              "isDocsHomePage": false,
+              "title": "ECS",
+              "description": "export const Quote = ({ children, color }) => (",
+              "source": "@site/docs/notes_ecs.mdx",
+              "slug": "/notes_ecs",
+              "permalink": "/FAQ/docs/notes_ecs",
+              "version": "current",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "VPC",
+                "permalink": "/FAQ/docs/notes_vpc"
+              },
+              "next": {
+                "title": "CloudFormation",
+                "permalink": "/FAQ/docs/notes_cfm"
+              }
+            },
+            {
+              "unversionedId": "notes_elb",
+              "id": "notes_elb",
+              "isDocsHomePage": false,
+              "title": "ELB",
+              "description": "export const Highlight = ({ children, color }) => (",
+              "source": "@site/docs/notes_elb.mdx",
+              "slug": "/notes_elb",
+              "permalink": "/FAQ/docs/notes_elb",
+              "version": "current",
+              "sidebar_label": "ELB",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "ASG",
+                "permalink": "/FAQ/docs/notes_asg"
+              },
+              "next": {
+                "title": "EBS & EFS",
+                "permalink": "/FAQ/docs/notes_ebs_efs"
+              }
+            },
+            {
+              "unversionedId": "notes_Encryption",
+              "id": "notes_Encryption",
+              "isDocsHomePage": false,
+              "title": "Encryption",
+              "description": "export const Highlight = ({ children, color }) => (",
+              "source": "@site/docs/notes_encryption.mdx",
+              "slug": "/notes_Encryption",
+              "permalink": "/FAQ/docs/notes_Encryption",
+              "version": "current",
+              "sidebar_label": "Encryption"
+            },
+            {
+              "unversionedId": "notes_fp",
+              "id": "notes_fp",
+              "isDocsHomePage": false,
+              "title": "Five Pillars",
+              "description": "export const Quote = ({ children, color }) => (",
+              "source": "@site/docs/notes_fp.mdx",
+              "slug": "/notes_fp",
+              "permalink": "/FAQ/docs/notes_fp",
+              "version": "current",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "HPC",
+                "permalink": "/FAQ/docs/notes_hpc"
+              },
+              "next": {
+                "title": "Notes for AWS Certified Solutions Architect Associate",
+                "permalink": "/FAQ/docs/notes"
+              }
+            },
+            {
+              "unversionedId": "notes_fsx",
+              "id": "notes_fsx",
+              "isDocsHomePage": false,
+              "title": "FSx",
+              "description": "export const Highlight = ({ children, color }) => (",
+              "source": "@site/docs/notes_fsx.mdx",
+              "slug": "/notes_fsx",
+              "permalink": "/FAQ/docs/notes_fsx",
+              "version": "current",
+              "sidebar_label": "FSx",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "EBS & EFS",
+                "permalink": "/FAQ/docs/notes_ebs_efs"
+              },
+              "next": {
+                "title": "S3",
+                "permalink": "/FAQ/docs/notes_s3"
+              }
+            },
+            {
+              "unversionedId": "notes_hpc",
+              "id": "notes_hpc",
+              "isDocsHomePage": false,
+              "title": "HPC",
+              "description": "export const Quote = ({ children, color }) => (",
+              "source": "@site/docs/notes_hpc.mdx",
+              "slug": "/notes_hpc",
+              "permalink": "/FAQ/docs/notes_hpc",
+              "version": "current",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "Disaster Recovery",
+                "permalink": "/FAQ/docs/notes_dr"
+              },
+              "next": {
+                "title": "Five Pillars",
+                "permalink": "/FAQ/docs/notes_fp"
+              }
+            },
+            {
+              "unversionedId": "notes_iam",
+              "id": "notes_iam",
+              "isDocsHomePage": false,
+              "title": "IAM",
+              "description": "export const Highlight = ({ children, color }) => (",
+              "source": "@site/docs/notes_iam.mdx",
+              "slug": "/notes_iam",
+              "permalink": "/FAQ/docs/notes_iam",
+              "version": "current",
+              "sidebar_label": "IAM",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "Security Groups",
+                "permalink": "/FAQ/docs/notes_sg"
+              },
+              "next": {
+                "title": "EC2",
+                "permalink": "/FAQ/docs/notes_ec2"
+              }
+            },
+            {
+              "unversionedId": "notes_kenesis",
+              "id": "notes_kenesis",
+              "isDocsHomePage": false,
+              "title": "Kenesis",
+              "description": "export const Quote = ({ children, color }) => (",
+              "source": "@site/docs/notes_kenesis.mdx",
+              "slug": "/notes_kenesis",
+              "permalink": "/FAQ/docs/notes_kenesis",
+              "version": "current",
+              "sidebar_label": "Kenesis",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "SNS",
+                "permalink": "/FAQ/docs/notes_sns"
+              },
+              "next": {
+                "title": "CloudWAtch",
+                "permalink": "/FAQ/docs/notes_cw"
+              }
+            },
+            {
+              "unversionedId": "notes_kms",
+              "id": "notes_kms",
+              "isDocsHomePage": false,
+              "title": "KMS",
+              "description": "export const Quote = ({ children, color }) => (",
+              "source": "@site/docs/notes_kms.mdx",
+              "slug": "/notes_kms",
+              "permalink": "/FAQ/docs/notes_kms",
+              "version": "current",
+              "sidebar_label": "KMS",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "CloudTrail",
+                "permalink": "/FAQ/docs/notes_ct"
+              },
+              "next": {
+                "title": "SSM",
+                "permalink": "/FAQ/docs/notes_ssm"
+              }
+            },
+            {
+              "unversionedId": "notes_lambda",
+              "id": "notes_lambda",
+              "isDocsHomePage": false,
+              "title": "Lambda",
+              "description": "export const Quote = ({ children, color }) => (",
+              "source": "@site/docs/notes_lambda.mdx",
+              "slug": "/notes_lambda",
+              "permalink": "/FAQ/docs/notes_lambda",
+              "version": "current",
+              "sidebar_label": "Lambda",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "Redshift",
+                "permalink": "/FAQ/docs/notes_redshift"
+              },
+              "next": {
+                "title": "DynamoDB",
+                "permalink": "/FAQ/docs/notes_dynamodb"
+              }
+            },
+            {
+              "unversionedId": "notes_multiaz",
+              "id": "notes_multiaz",
+              "isDocsHomePage": false,
+              "title": "Multi AZ",
+              "description": "export const StyledButton = withStyles({",
+              "source": "@site/docs/notes_multiaz.mdx",
+              "slug": "/notes_multiaz",
+              "permalink": "/FAQ/docs/notes_multiaz",
+              "version": "current",
+              "sidebar_label": "Multi AZ"
+            },
+            {
+              "unversionedId": "notes_os",
+              "id": "notes_os",
+              "isDocsHomePage": false,
+              "title": "Other Services",
+              "description": "export const Quote = ({ children, color }) => (",
+              "source": "@site/docs/notes_os.mdx",
+              "slug": "/notes_os",
+              "permalink": "/FAQ/docs/notes_os",
+              "version": "current",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "SWF & Step Function",
+                "permalink": "/FAQ/docs/notes_ss"
+              },
+              "next": {
+                "title": "Disaster Recovery",
+                "permalink": "/FAQ/docs/notes_dr"
+              }
+            },
+            {
+              "unversionedId": "notes_r53",
+              "id": "notes_r53",
+              "isDocsHomePage": false,
+              "title": "Route 53",
+              "description": "export const Quote = ({ children, color }) => (",
+              "source": "@site/docs/notes_r53.mdx",
+              "slug": "/notes_r53",
+              "permalink": "/FAQ/docs/notes_r53",
+              "version": "current",
+              "sidebar_label": "Route 53",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "ElastiCache",
+                "permalink": "/FAQ/docs/notes_ec"
+              },
+              "next": {
+                "title": "CloudFront",
+                "permalink": "/FAQ/docs/notes_cf"
+              }
+            },
+            {
+              "unversionedId": "notes_rds",
+              "id": "notes_rds",
+              "isDocsHomePage": false,
+              "title": "RDS",
+              "description": "export const Highlight = ({ children, color }) => (",
+              "source": "@site/docs/notes_rds.mdx",
+              "slug": "/notes_rds",
+              "permalink": "/FAQ/docs/notes_rds",
+              "version": "current",
+              "sidebar_label": "RDS",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "CLI & SDK",
+                "permalink": "/FAQ/docs/notes_cli_sdk"
+              },
+              "next": {
+                "title": "Redshift",
+                "permalink": "/FAQ/docs/notes_redshift"
+              }
+            },
+            {
+              "unversionedId": "notes_redshift",
+              "id": "notes_redshift",
+              "isDocsHomePage": false,
+              "title": "Redshift",
+              "description": "export let Quote = ({ children, color }) => (",
+              "source": "@site/docs/notes_redshift.mdx",
+              "slug": "/notes_redshift",
+              "permalink": "/FAQ/docs/notes_redshift",
+              "version": "current",
+              "sidebar_label": "Redshift",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "RDS",
+                "permalink": "/FAQ/docs/notes_rds"
+              },
+              "next": {
+                "title": "Lambda",
+                "permalink": "/FAQ/docs/notes_lambda"
+              }
+            },
+            {
+              "unversionedId": "notes_rr",
+              "id": "notes_rr",
+              "isDocsHomePage": false,
+              "title": "Read Replicas",
+              "description": "export const StyledButton = withStyles({",
+              "source": "@site/docs/notes_rr.mdx",
+              "slug": "/notes_rr",
+              "permalink": "/FAQ/docs/notes_rr",
+              "version": "current",
+              "sidebar_label": "Read Replicas"
+            },
+            {
+              "unversionedId": "notes_s3",
+              "id": "notes_s3",
+              "isDocsHomePage": false,
+              "title": "S3",
+              "description": "export const Highlight = ({ children, color }) => (",
+              "source": "@site/docs/notes_s3.mdx",
+              "slug": "/notes_s3",
+              "permalink": "/FAQ/docs/notes_s3",
+              "version": "current",
+              "sidebar_label": "S3",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "FSx",
+                "permalink": "/FAQ/docs/notes_fsx"
+              },
+              "next": {
+                "title": "Storage Extras",
+                "permalink": "/FAQ/docs/notes_storage_ex"
+              }
+            },
+            {
+              "unversionedId": "notes_sg",
+              "id": "notes_sg",
+              "isDocsHomePage": false,
+              "title": "Security Groups",
+              "description": "1. Security Group is the fundamental unit of network security on AWS.",
+              "source": "@site/docs/notes_sg.md",
+              "slug": "/notes_sg",
+              "permalink": "/FAQ/docs/notes_sg",
+              "version": "current",
+              "sidebar_label": "Security Groups",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "Regions & AZ",
+                "permalink": "/FAQ/docs/raz"
+              },
+              "next": {
+                "title": "IAM",
+                "permalink": "/FAQ/docs/notes_iam"
+              }
+            },
+            {
+              "unversionedId": "notes_sns",
+              "id": "notes_sns",
+              "isDocsHomePage": false,
+              "title": "SNS",
+              "description": "export const Quote = ({ children, color }) => (",
+              "source": "@site/docs/notes_sns.mdx",
+              "slug": "/notes_sns",
+              "permalink": "/FAQ/docs/notes_sns",
+              "version": "current",
+              "sidebar_label": "SNS",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "SQS",
+                "permalink": "/FAQ/docs/notes_sqs"
+              },
+              "next": {
+                "title": "Kenesis",
+                "permalink": "/FAQ/docs/notes_kenesis"
+              }
+            },
+            {
+              "unversionedId": "notes_sqs",
+              "id": "notes_sqs",
+              "isDocsHomePage": false,
+              "title": "SQS",
+              "description": "export const Quote = ({ children, color }) => (",
+              "source": "@site/docs/notes_sqs.mdx",
+              "slug": "/notes_sqs",
+              "permalink": "/FAQ/docs/notes_sqs",
+              "version": "current",
+              "sidebar_label": "SQS",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "BeanStalk",
+                "permalink": "/FAQ/docs/notes_bs"
+              },
+              "next": {
+                "title": "SNS",
+                "permalink": "/FAQ/docs/notes_sns"
+              }
+            },
+            {
+              "unversionedId": "notes_ss",
+              "id": "notes_ss",
+              "isDocsHomePage": false,
+              "title": "SWF & Step Function",
+              "description": "export const Quote = ({ children, color }) => (",
+              "source": "@site/docs/notes_ss.mdx",
+              "slug": "/notes_ss",
+              "permalink": "/FAQ/docs/notes_ss",
+              "version": "current",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "CloudFormation",
+                "permalink": "/FAQ/docs/notes_cfm"
+              },
+              "next": {
+                "title": "Other Services",
+                "permalink": "/FAQ/docs/notes_os"
+              }
+            },
+            {
+              "unversionedId": "notes_ssm",
+              "id": "notes_ssm",
+              "isDocsHomePage": false,
+              "title": "SSM",
+              "description": "export const Quote = ({ children, color }) => (",
+              "source": "@site/docs/notes_ssm.mdx",
+              "slug": "/notes_ssm",
+              "permalink": "/FAQ/docs/notes_ssm",
+              "version": "current",
+              "sidebar_label": "SSM",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "KMS",
+                "permalink": "/FAQ/docs/notes_kms"
+              },
+              "next": {
+                "title": "Shield & WAF",
+                "permalink": "/FAQ/docs/notes_sw"
+              }
+            },
+            {
+              "unversionedId": "notes_storage_ex",
+              "id": "notes_storage_ex",
+              "isDocsHomePage": false,
+              "title": "Storage Extras",
+              "description": "export const Highlight = ({ children, color }) => (",
+              "source": "@site/docs/notes_storage_ex.mdx",
+              "slug": "/notes_storage_ex",
+              "permalink": "/FAQ/docs/notes_storage_ex",
+              "version": "current",
+              "sidebar_label": "Storage Extras",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "S3",
+                "permalink": "/FAQ/docs/notes_s3"
+              },
+              "next": {
+                "title": "Athena",
+                "permalink": "/FAQ/docs/notes_athena"
+              }
+            },
+            {
+              "unversionedId": "notes_sw",
+              "id": "notes_sw",
+              "isDocsHomePage": false,
+              "title": "Shield & WAF",
+              "description": "export const Quote = ({ children, color }) => (",
+              "source": "@site/docs/notes_sw.mdx",
+              "slug": "/notes_sw",
+              "permalink": "/FAQ/docs/notes_sw",
+              "version": "current",
+              "sidebar_label": "Shield & WAF",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "SSM",
+                "permalink": "/FAQ/docs/notes_ssm"
+              },
+              "next": {
+                "title": "VPC",
+                "permalink": "/FAQ/docs/notes_vpc"
+              }
+            },
+            {
+              "unversionedId": "notes_vpc",
+              "id": "notes_vpc",
+              "isDocsHomePage": false,
+              "title": "VPC",
+              "description": "export const Quote = ({ children, color }) => (",
+              "source": "@site/docs/notes_vpc.mdx",
+              "slug": "/notes_vpc",
+              "permalink": "/FAQ/docs/notes_vpc",
+              "version": "current",
+              "sidebar_label": "VPC",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "Shield & WAF",
+                "permalink": "/FAQ/docs/notes_sw"
+              },
+              "next": {
+                "title": "ECS",
+                "permalink": "/FAQ/docs/notes_ecs"
+              }
+            },
+            {
+              "unversionedId": "notes_vpc_n",
+              "id": "notes_vpc_n",
+              "isDocsHomePage": false,
+              "title": "Networking",
+              "description": "export const StyledButton = withStyles({",
+              "source": "@site/docs/notes_vpc_n.mdx",
+              "slug": "/notes_vpc_n",
+              "permalink": "/FAQ/docs/notes_vpc_n",
+              "version": "current"
+            },
+            {
+              "unversionedId": "notes_vpc_r1",
+              "id": "notes_vpc_r1",
+              "isDocsHomePage": false,
+              "title": "Creating a VPC",
+              "description": "export const StyledButton = withStyles({",
+              "source": "@site/docs/notes_vpc_r1.mdx",
+              "slug": "/notes_vpc_r1",
+              "permalink": "/FAQ/docs/notes_vpc_r1",
+              "version": "current"
+            },
+            {
+              "unversionedId": "raz",
+              "id": "raz",
+              "isDocsHomePage": false,
+              "title": "Regions & AZ",
+              "description": "1. AWS has regions all around the world. A region is a cluster of AZs.",
+              "source": "@site/docs/regionaz.md",
+              "slug": "/raz",
+              "permalink": "/FAQ/docs/raz",
+              "version": "current",
+              "sidebar_label": "Regions & AZ",
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "Getting Started 🏎️",
+                "permalink": "/FAQ/docs/start"
+              },
+              "next": {
+                "title": "Security Groups",
+                "permalink": "/FAQ/docs/notes_sg"
+              }
+            },
+            {
+              "unversionedId": "route53",
+              "id": "route53",
+              "isDocsHomePage": false,
+              "title": "Amazon Route53 FAQs",
+              "description": "Q. What is a Domain Name System (DNS) Service?",
+              "source": "@site/docs/route53.md",
+              "slug": "/route53",
+              "permalink": "/FAQ/docs/route53",
+              "version": "current",
+              "sidebar_label": "Amazon Route53 FAQs"
+            },
+            {
+              "unversionedId": "sqs",
+              "id": "sqs",
+              "isDocsHomePage": false,
+              "title": "Amazon SQS FAQs",
+              "description": "Q: How is Amazon SQS different from Amazon SNS?",
+              "source": "@site/docs/sqs.md",
+              "slug": "/sqs",
+              "permalink": "/FAQ/docs/sqs",
+              "version": "current",
+              "sidebar_label": "Amazon SQS FAQs"
+            },
+            {
+              "unversionedId": "start",
+              "id": "start",
+              "isDocsHomePage": false,
+              "title": "Getting Started 🏎️",
+              "description": "export const Quote = ({ children, color }) => (",
+              "source": "@site/docs/start.mdx",
+              "slug": "/start",
+              "permalink": "/FAQ/docs/start",
+              "version": "current",
+              "sidebar": "someSidebar",
+              "next": {
+                "title": "Regions & AZ",
+                "permalink": "/FAQ/docs/raz"
+              }
+            },
+            {
+              "unversionedId": "vpc",
+              "id": "vpc",
+              "isDocsHomePage": false,
+              "title": "Amazon VPC FAQs",
+              "description": "Q. What is Amazon Virtual Private Cloud?",
+              "source": "@site/docs/vpc.md",
+              "slug": "/vpc",
+              "permalink": "/FAQ/docs/vpc",
+              "version": "current",
+              "sidebar_label": "Amazon VPC FAQs"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "docusaurus-plugin-content-blog": {
+    "default": null
+  },
+  "docusaurus-plugin-content-pages": {
+    "default": [
+      {
+        "type": "jsx",
+        "permalink": "/FAQ/aaaaa",
+        "source": "@site/src/pages/aaaaa.js"
+      }
+    ]
+  },
+  "docusaurus-plugin-debug": {
+    "default": null
+  },
+  "docusaurus-theme-classic": {
+    "default": null
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "unversionedId": "sqs",
+  "id": "sqs",
+  "isDocsHomePage": false,
+  "title": "Amazon SQS FAQs",
+  "description": "Q: How is Amazon SQS different from Amazon SNS?",
+  "source": "@site/docs/sqs.md",
+  "slug": "/sqs",
+  "permalink": "/FAQ/docs/sqs",
+  "version": "current",
+  "sidebar_label": "Amazon SQS FAQs"
+}

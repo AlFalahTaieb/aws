@@ -1,0 +1,21 @@
+{
+  "unversionedId": "notes_cognito",
+  "id": "notes_cognito",
+  "isDocsHomePage": false,
+  "title": "Cognito",
+  "description": "export const Quote = ({ children, color }) => (",
+  "source": "@site/docs/notes_cognito.mdx",
+  "slug": "/notes_cognito",
+  "permalink": "/FAQ/docs/notes_cognito",
+  "version": "current",
+  "sidebar_label": "Cognito",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "API Gateway",
+    "permalink": "/FAQ/docs/notes_apig"
+  },
+  "next": {
+    "title": "ElastiCache",
+    "permalink": "/FAQ/docs/notes_ec"
+  }
+}

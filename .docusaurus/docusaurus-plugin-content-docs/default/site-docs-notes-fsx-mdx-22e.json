@@ -1,0 +1,21 @@
+{
+  "unversionedId": "notes_fsx",
+  "id": "notes_fsx",
+  "isDocsHomePage": false,
+  "title": "FSx",
+  "description": "export const Highlight = ({ children, color }) => (",
+  "source": "@site/docs/notes_fsx.mdx",
+  "slug": "/notes_fsx",
+  "permalink": "/FAQ/docs/notes_fsx",
+  "version": "current",
+  "sidebar_label": "FSx",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "EBS & EFS",
+    "permalink": "/FAQ/docs/notes_ebs_efs"
+  },
+  "next": {
+    "title": "S3",
+    "permalink": "/FAQ/docs/notes_s3"
+  }
+}

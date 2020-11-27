@@ -1,0 +1,296 @@
+---
+id: notes_ec2
+title: EC2
+sidebar_label: EC2
+---
+
+
+
+export const Highlight = ({ children, color }) => (
+	<span
+		style={{
+			backgroundColor: "#FF9900",
+			borderRadius: "2px",
+			color: "#fff",
+			padding: "0.2rem",
+		}}
+	>
+		{children}
+	</span>
+)
+
+export const Quote = ({ children, color }) => (
+	<span
+		style={{
+			backgroundColor: "#5a5a5a",
+			borderRadius: "7px",
+			color: "#FF9900",
+			padding: "0.3rem",
+		}}
+	>
+		{children}
+	</span>
+)
+
+
+
+## I. Introduction
+
+1. EC2 is the backbone of AWS and encompasses a bundle of services, mainly
+    1. Renting virtual machines
+    2. Storing data on virtual drives (EBS)
+    3. Distributing load across machines (ELB)
+    4. Scaling the services using an auto scaling group (ASG)
+
+2. By default, an instance comes with
+    1. Private IP for internal AWS network
+    2. Public IP for WWW
+     
+3. EC2 instances can run scripts on startup based on `User Data`.
+4. As per SLA, EC2 guarantees a monthly uptime of at least 99.99% with EBS in a region.
+5. Offers variety of CPU options including AMD (x86), Intel (x86), ARM etc.
+6. Loosely based on Linux KVM.
+7. You can query the metadata (instance ID, network interface) by
+    1. Run the command `$ curl[http://169.254.169.254/latest/meta-data/](http://169.254.169.254/latest/meta-data/)`
+    2. Download and run the Instance Metadata Query Tool
+
+## II. Launch Types
+
+1. **On demand: short workload, predictable pricing**
+    1. Pay for what you use
+    2. Has the **highest** cost but no upfront payment
+    3. No long term commitment
+    4. Perfect for "elastic" load
+    5. Analogy: Coming and staying in hotel whenever you want but pay full price.
+
+2. **Reserved (min 1 year)**
+    1. Reserved Instance: long workloads
+    2. **Convertible Reserved Instance**
+        1. Long workloads with flexible instances aka change configuration during the lifecycle
+        2. Only Convertible Reserved Instances can be exchanged for other Convertible Reserved Instances
+
+    3. <Highlight>Scheduled Reserved Instance</Highlight>— every Thursday, 3p-6p
+    4. Up to 75% cheaper, pay upfront for 1-3 year period
+    5. Suitable for traditional IT uses
+    6. To take advantage of capacity reservation, you should buy RI in a specific AZ (zonal RI)
+    7. You can purchase RI for an already running instance
+    8. <Highlight>You can sell your RIs to other customers on AWS Marketplace if no longer needed</Highlight>
+    9. Analogy: Planning and booking way ahead of time to get a discount.
+
+3. <Highlight>Spot: short workloads, cheap but unreliable</Highlight>
+    1. Spare instances with up to 90% savings than on-demand
+    2. <Highlight>Can gracefully recover from instance failures!</Highlight>
+    3. Can be interrupted with 2-min notification. You can choose to either **stop**, **terminate** or **hibernate** your spot instance on termination. **Default is termination.**
+    4. Can request as many as the region allows
+    5. Useful for workloads resilient to failure e.g. batch jobs, image processing
+    6. Not great for critical jobs like databases
+    7. Define `max_spot_price` and get the instance while `current_spot_price` **QT** `max_spot_price`
+    8. The hourly price varies based on offer and capacity
+    9. When your bid is no longer the highest, you get a <Highlight>2-min window to either stop or terminate the instance (you will be billed closes to a second)</Highlight>
+    10. Should have enough RAM (EBS root volume) if you wish to hibernate
+    11. You can either request it "once" or "persistent"
+    12. Cannot use with third-party AMI but only AWS/MS/Linux AMIs
+    13. Only available for C, M and R classes
+    14. To cancel instances, make sure you cancel request first otherwise it will be an infinite loop where the request will be invoked to re-create the stopped/terminated instance
+    15. Analogy: Hotel allows bidding for empty rooms and highest bidder wins. You can be kicked out at any time.
+    16. <Highlight>Spot Block allows you to request spot instances for specified duration from 1 to 6 hours. These instances are guaranteed to run without interruption for block duration requested. It offers 30 to 50% discount over on-demand pricing</Highlight>
+
+4. <Highlight>Spot fleets = set of spot instances + (optional) on-demand instances</Highlight>
+    1. Allows us to automatically request spot instances with the lowest price
+    2. Tries best to meet target capacity with price constraints
+    3. <Highlight>Supports multi-AZ fleets but NOT multi-region</Highlight>
+    4. It first creates candidate pools (size, OS, AZ) and then picks the best candidate
+    5. Strategies to allocate spot pools
+        1. Lowest price: candidate with lowest price
+        2. Diversified: distributed across all pools (great availability for longer workloads) 
+        3. Capacity optimized: Pool with optimal capacity for number of instances
+
+5. <Highlight>EC2 fleet = same as Spot fleet, don't migrate</Highlight>
+    1. Does not support multi-region fleet reservation
+    2. Can modify the fleet in "maintenance" mode
+
+6. <Highlight>Dedicated instances: No other customer will share your hardware</Highlight>
+    1. Run in a VPC on hardware that’s dedicated to a single customer.
+    2. Your Dedicated instances are physically isolated at the host hardware level from instances that belong to other AWS accounts.
+    3. May share hardware with other instances in the same account
+    4. <Highlight>Automatic instance placement and billing is per instance.</Highlight>
+
+7. <Highlight>Dedicated hosts: book an entire physical server</Highlight>
+    1. Expensive
+    2. Visibility into the underlying **sockets and physical cores** of hardware
+    3. Full control over instance placement
+    4. Suitable for BYOL scenarios
+    5. <Highlight>Billing is on a per-host basis (and not per instance)</Highlight>
+    6. Analogy: Book an entire building of hotel.
+
+8. <Highlight>Best combo: Reserved for baseline + On-demand/Spot for spikes</Highlight>
+
+## III. Instant Types
+
+1. R: Applications that need lots of RAM
+2. C: Apps that need more compute
+3. M: Middle between R and C
+4. I: Lots of IO
+5. G: Apps that need GPU power
+6. P: Next generation GPU power (AI, ML, HPC)
+7. F: FPGA-based, comes with Hardware Development Kit (HDK)
+8. T2/T3: Burst-able instances (up to a capacity, uses burst credits)
+9. T2/T3: Unlimited bursts (unlimited burst credits)
+10. T4: Next-gen general purpose burst-able instances based on ARM, 40% more performance than T3
+11. X: Ideal for running large in-memory databases
+
+## IV. EC2 AMIs
+
+1. A custom AMI might be needed for
+    1. Pre-installed packages
+    2. Faster boot time
+    3. Machine comes configured with monitoring/enterprise software
+    4. Security concerns
+    5. AD and LDAP config
+    6. Install app AoT
+
+2. You can rent AMIs or build your own. 
+3. Don't blindly trust 3rd-party AMIs.
+4. AMIs live in S3, inexpensive to store.
+5. You can share AMIs across accounts. If Bob is the author and shares with Alice, then Alice cannot copy the AMI unless Bob has given her permission to EBS snapshot or S3.
+6. However, if Alice creates an instance from Bob's AMI and then creates an AMI based on that instance, then she'll have a copy of that AMI.
+7. <Highlight>You cannot copy an AMI with associated billing product eg Windows/Marketplace AMIs.</Highlight> To do that, you'd need to launch an instance with that AMI and then store a copy.
+8. AMIs are region-bound and the same ID cannot be used across regions.
+9. If you want to launch instances with hefty setups frequently:
+    1. create one instance
+    2. install stuff on it
+    3. create an AMI out of it and reuse it everywhere
+
+
+## V. Placement Groups
+
+Control over placement of instances (no direct HW interaction). There are three types.
+
+1. <Highlight>Cluster</Highlight>
+
+    1. **Clustered instances into a low latency group ina  single AZ.**
+    2. They are placed on the same rack.
+    3. Drawback: Single point of failure (rack).
+    4. It's used in low latency apps like HPC, gamingand   video
+
+2. <Highlight>Spread</Highlight>
+
+    1. It's the complete opposite of cluster
+    2. Instances are scattered across AZs.
+    3. **Limited to 7 instances per AZ per group.**
+    4. **Used in apps that need HA**
+
+3. <Highlight>Partition</Highlight>
+    
+    1. Set of  partitions (racks) per AZ, up to 7.
+    2. Each partition has multiple instances.
+    3. One whole partition (rack) can fail but it won't affect other partitions.
+    4. EC2 instances can get metadata regarding which partition they belong to.
+    5. <Highlight>Used in Kafka, HBase, Cassandra and other distributed apps.</Highlight>
+
+4. It is recommended that you launch the number of instances that you need in the placement group in a single launch request and that you use the same instance type for all instances in the placement group. If you try to add more instances to the placement group later, or if you try to launch more than one instance type in the placement group, you increase your chances of getting an insufficient capacity error.
+
+## VI. Elastic Network Interface (ENI)
+
+1. An elastic network interface (ENI) is a logical networking component in a VPC that represents a virtual network card. You can attach an ENI to an EC2 instance in the following ways:
+    1. When it's running (hot attach)
+    2. When it's stopped (warm attach)
+    3. When the instance is being launched (cold attach)
+
+2. The ENI can have following attributes:
+    1. <Highlight>One primary private IPv4 (eth0) and multiple secondary IPv4 (eth1, eth2 etc)</Highlight>
+    2. One public IPv4
+    3. One or more SG
+    4. A MAC address
+
+3. <Highlight>They are bound to an AZ</Highlight>
+4. You can create a network interface, attach it to an instance, detach it from an instance, and attach it to another instance. When you move a network interface from one instance to another, network traffic is redirected to the new instance.
+5. If the instance fails, you can attach the network interface to a hot standby instance. Because the interface maintains its private IP addresses, Elastic IP addresses, and MAC address, network traffic begins flowing to the standby instance as soon as you attach the network interface to the replacement instance. Users experience a brief loss of connectivity between the time the instance fails and the time that the network interface is attached to the standby instance, but no changes to the VPC route table or your DNS server are required.
+
+
+## VII. Hibernate
+
+1. `Stop`: Data on disk (EBS) is kept intact in the next start, RAM is cleared
+2. `Terminate`: Any EBS volume is destroyed
+3. `Hibernate`: 
+    1. Boot is faster as RAM is preserved. 
+    2. Behind the scenes, the RAM is dumped on to EBS which is then loaded. 
+    3. Supported families are C, M and R.
+    4. Useful for long running processes and services that take long to boot.
+    5. Instance RAM size must be less than 150 GB.
+    6. Not supported for bare metal instances.
+    7. Supports Amazon AMI2, Linux AMI and Windows.
+    8. **Root volume MUST be EBS and encrypted**, not instance store and large.
+    9. Available for on-demand and reserved instances
+    10. **Cannot be hibernated for more than 60 days**
+    11. <Highlight>No special fee for hibernating</Highlight>
+    12. **Hibernated instances are in <Quote>Stop</Quote> state**
+
+## VIII. EC2 Tips
+
+1. <Highlight>EC2 instances are billed by second</Highlight>
+2. Timeout issues are most likely due to SG issues
+3. SSH login issue? Run <Quote>chmod</Quote> 400 on the <Quote>.pem</Quote> file.
+4. One SG can refer other SG instead of IP ranges (popular exam question)
+5. The start script is called `User Data`
+6. <Quote>RunInstance</Quote> is the API that launches instances
+7. (New) AWS is moving on-demand instance limits from the current instance count-based limits to the new vCPU-based limits to simplify experience.
+8. (New) AWS will be restricting email traffic on the default SMTP port 25 to prevent abuse.
+9. When you terminate an instance, the root volume is flashed. It's recommended to use S3 or EBS if you want to persist data.
+10. EBS volume terminated immediately?
+    1. You’ve reached your EBS volume limit.
+    2. An EBS snapshot is corrupt.
+    3. The root EBS volume is encrypted and you do not have permissions to access the KMS key for decryption.
+    4. The instance store-backed AMI that you used to launch the instance is missing a required part (an image.part.xx file).
+
+11. If you're using EBS volume as a root partition, you will need to set the <Quote>DeleteOnTerminate</Quote> flag to <Quote>False</Quote> to persist data outside the life of the instance.
+12. By default, all accounts are limited to 5 elastic IPs per region, given the fact the public IPv4 are a scarce resource.
+13. Even if you delete/terminate an instance, you can view its logs for up to 2 weeks in CloudWatch.
+14. CloudWatch charges do not vary by instance type.
+15. VM import/export enables customer to import VMs to create EC2 images and vice-versa. Both Windows and Linux VMs are supported.
+16. Eventually, all EC2 will use AWS-provided Nitro hypervisor.
+17. You can use existing Windows license with EC2.
+18. You can use Compute Optimizer to get actionable insight on choosing the right EC2 class.
+19. <Quote>Customer is responsible for patching EC2 OS.</Quote>
+20. <Quote>After exhausting burst-credits, your EC2 would be returned to the baseline capacity which might induce latency/throttle in your app.</Quote>
+21. For license that are tied to hardware socket and cores, you can use either dedicated hosts or bare metal instances.
+22. When you recover an EC2 instance using CloudWatch alarm, the instance is moved to a different physical host. Instance has same metadata including public and private IP.
+23. <Highlight>Private IPv4 based communication inside an availability zone is Free. Intra-region pricing applies for any traffic between Availability Zones.</Highlight>
+24. <Highlight>You are limited to running On-Demand Instances per your vCPU-based On-Demand Instance limit</Highlight>, purchasing 20 Reserved Instances, and requesting Spot Instances per your dynamic Spot limit per region.
+25. <Highlight>An Elastic IP address doesn’t incur charges as long as the following conditions are true:</Highlight>
+    1. The Elastic IP address is associated with an Amazon EC2 instance.
+    2. The instance associated with the Elastic IP address is running.
+    3. The instance has only one Elastic IP address attached to it.
+
+26. <Highlight>If you’ve stopped or terminated an EC2 instance with an associated Elastic IP address and you don’t need that Elastic IP address anymore, consider disassociating or releasing the Elastic IP address else you'll be charged for it!</Highlight>
+
+27. When an EC2 instance is stopped:
+    1. The underlying host for the instance is possibly changed
+    2. All data on the attached instance-store devices will be lost
+    3. The ENI will stay attached
+    4. <Highlight>EIP will remain associated</Highlight>
+
+28. <Highlight>Metrics available through CloudWatch by default</Highlight>
+    1. CPU utilization
+    2. Disk reads
+    3. Network packets
+
+29. <Highlight>Metrics available through CloudWatch Agent (or CloudWatch scripts)</Highlight>
+    1. Memory utilization
+    2. Disk swap utilization
+    3. Disk space utilization
+    4. Page file utilization
+    5. Log collection
+
+30. You need to pay for
+    1. Per instance hourly charge — rounded to nearest second with a minimum of 1 minute
+    2. Data transfer
+    3. EBS volume
+
+| Tags                                                            | Billed |
+|-----------------------------------------------------------------|--------|
+| On-demand instance preparing to hibernate with a <Quote>stopping</Quote> state |   :white_check_mark:  |
+| An instance NOT in <Quote>running</Quote> state                                |   :white_check_mark:    |
+| On-demand instance in  <Quote>pending</Quote> state                            |   ❌    |
+| Spot instance preparing to stop with <Quote>stopping</Quote> state             |    ❌   |
+| Reserved instance in <Quote>terminated</Quote> instance                        |    :white_check_mark:   |

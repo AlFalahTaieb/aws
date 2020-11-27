@@ -1,0 +1,21 @@
+{
+  "unversionedId": "notes_asg",
+  "id": "notes_asg",
+  "isDocsHomePage": false,
+  "title": "ASG",
+  "description": "export const Highlight = ({ children, color }) => (",
+  "source": "@site/docs/notes_asg.mdx",
+  "slug": "/notes_asg",
+  "permalink": "/FAQ/docs/notes_asg",
+  "version": "current",
+  "sidebar_label": "ASG",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "EC2",
+    "permalink": "/FAQ/docs/notes_ec2"
+  },
+  "next": {
+    "title": "ELB",
+    "permalink": "/FAQ/docs/notes_elb"
+  }
+}

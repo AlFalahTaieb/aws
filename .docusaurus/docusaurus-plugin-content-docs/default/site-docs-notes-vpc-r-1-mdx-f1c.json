@@ -1,0 +1,11 @@
+{
+  "unversionedId": "notes_vpc_r1",
+  "id": "notes_vpc_r1",
+  "isDocsHomePage": false,
+  "title": "Creating a VPC",
+  "description": "export const StyledButton = withStyles({",
+  "source": "@site/docs/notes_vpc_r1.mdx",
+  "slug": "/notes_vpc_r1",
+  "permalink": "/FAQ/docs/notes_vpc_r1",
+  "version": "current"
+}

@@ -1,0 +1,95 @@
+---
+id: notes_cloudtrail
+title: CloudTrail
+sidebar_label: CloudTrail
+author: Taieb
+---
+
+export const Quote = ({ children, color }) => (
+	<span
+		style={{
+			backgroundColor: "#5a5a5a",
+			borderRadius: "8px",
+			color: "#FF9900",
+			padding: "0.21rem",
+		}}
+	>
+		{children}
+	</span>
+)
+
+<!-- ![Example](../src/media/cexample.png) -->
+
+## I. CloudTrail
+
+1. CloudTrail provides visibility into user activity by recording actions taken on your account.
+2. Provides governance, compliance and **audit** for your AWS account.
+3. <Quote>Enabled by default for all customers, can send logs to CloudWatch.</Quote>
+4. Get a history of events i.e. API calls made within your AWS account by console, CLI, SDK, AWS services
+5. **By default, event logs are encrypted using SSE-S3.**
+6. Logs are published every 5 minutes.
+7. If a resource is deleted, look into CloudTrail first!
+8. Does not charge for your first management trail, but only the additional trails you that you create thereafter.
+9. A trail can be applied to all regions or a single region. As a best practice, create a trail that applies to all regions in the AWS partition in which you are working. This is the default setting when you create a trail in the CloudTrail console.
+10. Once you apply a trail in all regions, **CloudTrail will create a new trail in all regions by replicating the trail configuration**. CloudTrail will record and process the log files in each region and will deliver log files containing account activity across all AWS regions to a single S3 bucket and a single CloudWatch Logs log group.
+11. <Quote>You can apply an existing trail to all regions. No need to create one tail per region!</Quote>
+12. <Quote>A single KMS key can be used to encrypt log files for trails applied to all regions.</Quote>
+13. **You can create up to five trails in an AWS region.** A trail that applies to all regions exists in each region and is counted as one trail in each region.
+14. Typically, CloudTrail delivers an event within 15 minutes of the API call.
+15. An event contains information about the associated activity: who made the request, the services used, the actions performed, and parameters for the action, and the response elements returned by the AWS service.
+16. <Quote>You can configure one S3 bucket as the destination for multiple accounts.</Quote>
+17. <Quote>AWS CloudTrail Insights events help customers identify unusual activity</Quote> in their AWS accounts such as spikes in resource provisioning, bursts of AWS Identity and Access Management (IAM) actions, or gaps in periodic maintenance activity.
+18. <Quote>CloudTrail log file integrity validation feature allows you to determine whether a CloudTrail log file was unchanged, deleted, or modified since CloudTrail delivered it to the specified Amazon S3 bucket.</Quote>
+19. Data events provide visibility into the resource operations performed on or within a resource. These are also known as **data plane** operations. Data events are often high-volume activities.
+    1. Not logged by default
+    2. <Quote>S3 object-level API activity (e.g., GetObject, DeleteObject, and PutObject).</Quote>
+    3. AWS Lambda function execution activity (the `Invoke` API).
+
+20. Management events provide visibility into management operations that are performed on resources in your AWS account. These are also known as **control plane** operations. Example management events include:
+    1. Logged by default
+    2. <Quote>Configuring security (e.g. IAM AttachRolePolicy API operations)</Quote>
+    3. <Quote>Registering devices (e.g. Amazon EC2 CreateDefaultVpc API operations)</Quote>
+
+## II. AWS Config
+
+1. Helps with auditing and recording compliance of your AWS resources.
+2. Helps record configurations and changes over time.
+3. <Quote>Possibility of storing the configuration data into S3 (analyzed by Athena).</Quote>
+4. AWS Config helps in
+    1. Is there unrestricted SSH access to my security groups?
+    2. Do my buckets have any public access?
+    3. How has my ALB configurations changed over time?
+    4. Is the AMI approved?
+
+5. You can receive SNS alerts for your changes.
+6. Can use AWS managed rules (75+ available)
+7. Can make custom config rules (must be defined in AWS Lambda)
+    1. evaluate if each EBS disk is GP2 type
+    2. evaluate if each EC2 instance is t2.micro
+
+8. Rules can evaluated or triggered
+    1. for each config change
+    2. at regular time intervals
+    3. can trigger CloudWatch events if the rule is non-compliant (and daisy-chain with lambda)
+
+9. Rules can have auto-remediations i.e. if a resource is not compliant, you can trigger an auto remediation e.g. stop instances with non-approved tags.
+10. AWS Config rules do not prevent actions from happening (there's no explicit deny)
+11. No free tier. $2/active rule/region 
+
+## III. CloudWatch vs CloudTrail vs Config
+
+1. **CloudWatch (Performance)**
+    1. Performance monitoring (metrics, CPU, network etc) and dashboard
+    2. Events and alerts
+    3. Log aggregation and analysis
+
+2. **CloudTrail (Audit)**
+    1. Who did what?
+    2. Record API calls made within your account by everyone
+    3. Can define trails for specific resources
+    4. Global service
+
+3. **Config (Compliance)**
+    1. Record configuration changes
+    2. Evaluate resources against compliance rules
+    3. Get timeline of changes and compliance

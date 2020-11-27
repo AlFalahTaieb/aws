@@ -1,0 +1,21 @@
+{
+  "unversionedId": "notes_sg",
+  "id": "notes_sg",
+  "isDocsHomePage": false,
+  "title": "Security Groups",
+  "description": "1. Security Group is the fundamental unit of network security on AWS.",
+  "source": "@site/docs/notes_sg.md",
+  "slug": "/notes_sg",
+  "permalink": "/FAQ/docs/notes_sg",
+  "version": "current",
+  "sidebar_label": "Security Groups",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Regions & AZ",
+    "permalink": "/FAQ/docs/raz"
+  },
+  "next": {
+    "title": "IAM",
+    "permalink": "/FAQ/docs/notes_iam"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "unversionedId": "notes_vpc_n",
+  "id": "notes_vpc_n",
+  "isDocsHomePage": false,
+  "title": "Networking",
+  "description": "export const StyledButton = withStyles({",
+  "source": "@site/docs/notes_vpc_n.mdx",
+  "slug": "/notes_vpc_n",
+  "permalink": "/FAQ/docs/notes_vpc_n",
+  "version": "current"
+}

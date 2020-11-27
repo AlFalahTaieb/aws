@@ -1,0 +1,264 @@
+{
+  "version": "current",
+  "label": "Next",
+  "isLast": true,
+  "docsSidebars": {
+    "someSidebar": [
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "AWS Certified Solutions Architect Guide",
+        "items": [
+          {
+            "type": "link",
+            "label": "Getting Started 🏎️",
+            "href": "/FAQ/docs/start"
+          },
+          {
+            "type": "link",
+            "label": "Regions & AZ",
+            "href": "/FAQ/docs/raz"
+          },
+          {
+            "type": "link",
+            "label": "Security Groups",
+            "href": "/FAQ/docs/notes_sg"
+          },
+          {
+            "type": "link",
+            "label": "IAM",
+            "href": "/FAQ/docs/notes_iam"
+          },
+          {
+            "type": "link",
+            "label": "EC2",
+            "href": "/FAQ/docs/notes_ec2"
+          },
+          {
+            "type": "link",
+            "label": "ASG",
+            "href": "/FAQ/docs/notes_asg"
+          },
+          {
+            "type": "link",
+            "label": "ELB",
+            "href": "/FAQ/docs/notes_elb"
+          },
+          {
+            "type": "link",
+            "label": "EBS & EFS",
+            "href": "/FAQ/docs/notes_ebs_efs"
+          },
+          {
+            "type": "link",
+            "label": "FSx",
+            "href": "/FAQ/docs/notes_fsx"
+          },
+          {
+            "type": "link",
+            "label": "S3",
+            "href": "/FAQ/docs/notes_s3"
+          },
+          {
+            "type": "link",
+            "label": "Storage Extras",
+            "href": "/FAQ/docs/notes_storage_ex"
+          },
+          {
+            "type": "link",
+            "label": "Athena",
+            "href": "/FAQ/docs/notes_athena"
+          },
+          {
+            "type": "link",
+            "label": "DataSync",
+            "href": "/FAQ/docs/notes_datasync"
+          },
+          {
+            "type": "link",
+            "label": "CLI & SDK",
+            "href": "/FAQ/docs/notes_cli_sdk"
+          },
+          {
+            "type": "link",
+            "label": "RDS",
+            "href": "/FAQ/docs/notes_rds"
+          },
+          {
+            "type": "link",
+            "label": "Redshift",
+            "href": "/FAQ/docs/notes_redshift"
+          },
+          {
+            "type": "link",
+            "label": "Lambda",
+            "href": "/FAQ/docs/notes_lambda"
+          },
+          {
+            "type": "link",
+            "label": "DynamoDB",
+            "href": "/FAQ/docs/notes_dynamodb"
+          },
+          {
+            "type": "link",
+            "label": "API Gateway",
+            "href": "/FAQ/docs/notes_apig"
+          },
+          {
+            "type": "link",
+            "label": "Cognito",
+            "href": "/FAQ/docs/notes_cognito"
+          },
+          {
+            "type": "link",
+            "label": "ElastiCache",
+            "href": "/FAQ/docs/notes_ec"
+          },
+          {
+            "type": "link",
+            "label": "Route 53",
+            "href": "/FAQ/docs/notes_r53"
+          },
+          {
+            "type": "link",
+            "label": "CloudFront",
+            "href": "/FAQ/docs/notes_cf"
+          },
+          {
+            "type": "link",
+            "label": "BeanStalk",
+            "href": "/FAQ/docs/notes_bs"
+          },
+          {
+            "type": "link",
+            "label": "SQS",
+            "href": "/FAQ/docs/notes_sqs"
+          },
+          {
+            "type": "link",
+            "label": "SNS",
+            "href": "/FAQ/docs/notes_sns"
+          },
+          {
+            "type": "link",
+            "label": "Kenesis",
+            "href": "/FAQ/docs/notes_kenesis"
+          },
+          {
+            "type": "link",
+            "label": "CloudWAtch",
+            "href": "/FAQ/docs/notes_cw"
+          },
+          {
+            "type": "link",
+            "label": "CloudTrail",
+            "href": "/FAQ/docs/notes_ct"
+          },
+          {
+            "type": "link",
+            "label": "KMS",
+            "href": "/FAQ/docs/notes_kms"
+          },
+          {
+            "type": "link",
+            "label": "SSM",
+            "href": "/FAQ/docs/notes_ssm"
+          },
+          {
+            "type": "link",
+            "label": "Shield & WAF",
+            "href": "/FAQ/docs/notes_sw"
+          },
+          {
+            "type": "link",
+            "label": "VPC",
+            "href": "/FAQ/docs/notes_vpc"
+          },
+          {
+            "type": "link",
+            "label": "ECS",
+            "href": "/FAQ/docs/notes_ecs"
+          },
+          {
+            "type": "link",
+            "label": "CloudFormation",
+            "href": "/FAQ/docs/notes_cfm"
+          },
+          {
+            "type": "link",
+            "label": "SWF & Step Function",
+            "href": "/FAQ/docs/notes_ss"
+          },
+          {
+            "type": "link",
+            "label": "Other Services",
+            "href": "/FAQ/docs/notes_os"
+          },
+          {
+            "type": "link",
+            "label": "Disaster Recovery",
+            "href": "/FAQ/docs/notes_dr"
+          },
+          {
+            "type": "link",
+            "label": "HPC",
+            "href": "/FAQ/docs/notes_hpc"
+          },
+          {
+            "type": "link",
+            "label": "Five Pillars",
+            "href": "/FAQ/docs/notes_fp"
+          },
+          {
+            "type": "link",
+            "label": "Notes for AWS Certified Solutions Architect Associate",
+            "href": "/FAQ/docs/notes"
+          }
+        ]
+      }
+    ]
+  },
+  "permalinkToSidebar": {
+    "/FAQ/docs/notes": "someSidebar",
+    "/FAQ/docs/notes_apig": "someSidebar",
+    "/FAQ/docs/notes_asg": "someSidebar",
+    "/FAQ/docs/notes_athena": "someSidebar",
+    "/FAQ/docs/notes_bs": "someSidebar",
+    "/FAQ/docs/notes_cf": "someSidebar",
+    "/FAQ/docs/notes_cfm": "someSidebar",
+    "/FAQ/docs/notes_cli_sdk": "someSidebar",
+    "/FAQ/docs/notes_cognito": "someSidebar",
+    "/FAQ/docs/notes_ct": "someSidebar",
+    "/FAQ/docs/notes_cw": "someSidebar",
+    "/FAQ/docs/notes_datasync": "someSidebar",
+    "/FAQ/docs/notes_dr": "someSidebar",
+    "/FAQ/docs/notes_dynamodb": "someSidebar",
+    "/FAQ/docs/notes_ebs_efs": "someSidebar",
+    "/FAQ/docs/notes_ec": "someSidebar",
+    "/FAQ/docs/notes_ec2": "someSidebar",
+    "/FAQ/docs/notes_ecs": "someSidebar",
+    "/FAQ/docs/notes_elb": "someSidebar",
+    "/FAQ/docs/notes_fp": "someSidebar",
+    "/FAQ/docs/notes_fsx": "someSidebar",
+    "/FAQ/docs/notes_hpc": "someSidebar",
+    "/FAQ/docs/notes_iam": "someSidebar",
+    "/FAQ/docs/notes_kenesis": "someSidebar",
+    "/FAQ/docs/notes_kms": "someSidebar",
+    "/FAQ/docs/notes_lambda": "someSidebar",
+    "/FAQ/docs/notes_os": "someSidebar",
+    "/FAQ/docs/notes_r53": "someSidebar",
+    "/FAQ/docs/notes_rds": "someSidebar",
+    "/FAQ/docs/notes_redshift": "someSidebar",
+    "/FAQ/docs/notes_s3": "someSidebar",
+    "/FAQ/docs/notes_sg": "someSidebar",
+    "/FAQ/docs/notes_sns": "someSidebar",
+    "/FAQ/docs/notes_sqs": "someSidebar",
+    "/FAQ/docs/notes_ss": "someSidebar",
+    "/FAQ/docs/notes_ssm": "someSidebar",
+    "/FAQ/docs/notes_storage_ex": "someSidebar",
+    "/FAQ/docs/notes_sw": "someSidebar",
+    "/FAQ/docs/notes_vpc": "someSidebar",
+    "/FAQ/docs/raz": "someSidebar",
+    "/FAQ/docs/start": "someSidebar"
+  }
+}

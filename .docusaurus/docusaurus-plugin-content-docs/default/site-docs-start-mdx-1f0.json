@@ -1,0 +1,16 @@
+{
+  "unversionedId": "start",
+  "id": "start",
+  "isDocsHomePage": false,
+  "title": "Getting Started 🏎️",
+  "description": "export const Quote = ({ children, color }) => (",
+  "source": "@site/docs/start.mdx",
+  "slug": "/start",
+  "permalink": "/FAQ/docs/start",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "next": {
+    "title": "Regions & AZ",
+    "permalink": "/FAQ/docs/raz"
+  }
+}

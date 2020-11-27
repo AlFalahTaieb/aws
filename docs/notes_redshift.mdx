@@ -1,0 +1,77 @@
+---
+id: notes_redshift
+title: Redshift
+sidebar_label: Redshift
+author: Taieb
+---
+
+
+export let Quote = ({ children, color }) => (
+	<span
+		style={{
+			backgroundColor: "#5a5a5a",
+			borderRadius: "12px",
+			color: "#FF9900",
+			padding: "0.18rem",
+		}}
+	>
+		{children}
+</span>
+)
+
+## I. Introduction
+
+1. <Quote>Fully managed, petabyte-scale data warehousing solution (OLAP) for BI</Quote>
+2. Based on pgsql, 10x better performance
+3. Customers can start at $0.25/hr with no commitment
+4. Two configurations
+    - <Quote>Single-node</Quote> (160 GB)
+    - <Quote>Multi-node</Quote>
+        - Leader node (manages client connections and receives query)
+        - Compute node (store data and perform queries, up to 128 nodes)
+5. <Quote>Uses column-based storage and compression</Quote>
+6. Doesn't require indexing so uses less space than traditional solutions
+7. Comes with Massively Parallel Processing (MPP) and distributes data/query load across all nodes enabling fast query performance
+8. Default backup with 1-day retention period (max 35)
+9. Redshift always attempts to keep at least three copies of the data
+    - Original
+    - Replica
+    - S3 backup (async, for disaster recovery)
+10. Priced based on compute node-hours i.e. 1 unit per node per hour, backup and data transfer (within VPC)
+11. Always encrypted with AES-256
+12. Multi-AZ is NOT supported
+13. Data can be loaded from S3, DynamoDB, DMS, other services
+14. Supports all popular open data formats (Avro, Parquet, ORC etc)
+
+## II. Redshift spectrum
+
+1. <Quote>Query data that is already in S3 without loading it.</Quote>
+2. To use it, you must have Redshift cluster to start the query.
+3. The query is then submitted to thousands of Redshift spectrum nodes.
+4. Does not use enhanced VPC routing.
+
+## III. Redshift for SA
+
+1. Operations: Similar to RDS
+2. Security: IAM, VPC, KMS, SSL
+3. Reliability: HA, auto-healing features
+4. Performance: 10x better than other DW
+5. Cost: pay per node provisioned, 1/10 cost of other DW
+
+## IV. Redshift Tips
+
+1. Redshift is a columnar data warehouse DB that is ideal for running long complex queries. 
+2. <Quote>Redshift can also improve performance for repeat queries by caching the result and returning the cached result when queries are re-run. Dashboard, visualization, and business intelligence (BI) tools that execute repeat queries see a significant boost in performance due to result caching.</Quote>
+3. When you use <Quote>Amazon Redshift Enhanced VPC Routing</Quote>, Amazon Redshift forces all `COPY` and `UNLOAD` traffic between your cluster and your data repositories through your Amazon VPC.
+4. Two types of snapshots — automated and manual. Snapshots are stored in S3 using SSL, free of charge. After you reach the free limit, you are charged at regular S3 rate.
+5. Redshift periodically takes incremental snapshots of your data every 8 hours or 5GB per node of data change.
+6. <Quote>Automated snapshots are enabled by default when you create a cluster</Quote>. These snapshots are deleted at the end of a retention period, which is 1 day by default (can be modified). You cannot delete an automated snapshot manually.
+7. Snapshots created from encrypted cluster are also encrypted.
+8. By default, manual snapshots are retained indefinitely, even after you delete your cluster.
+9. By default, a Redshift cluster is only accessible by the creator.
+10. Based on the Redshift platform (EC2-classic, EC2-VPC), you must use the appropriate security group.
+11. You pay a per-second billing rate based on the type and number of nodes in your cluster.
+12. <Quote>You can reserve instances to save costs.</Quote>
+13. You can use Workload Management (WLM) in the parameter group configuration.
+14. AQUA is a new distributed and hardware-accelerated cache that enables Redshift to run up to 10x faster than any other cloud data warehouse.
+15. <Quote>You can configure Amazon Redshift to copy snapshots for a cluster to another region.</Quote>

@@ -1,0 +1,21 @@
+{
+  "unversionedId": "notes_kenesis",
+  "id": "notes_kenesis",
+  "isDocsHomePage": false,
+  "title": "Kenesis",
+  "description": "export const Quote = ({ children, color }) => (",
+  "source": "@site/docs/notes_kenesis.mdx",
+  "slug": "/notes_kenesis",
+  "permalink": "/FAQ/docs/notes_kenesis",
+  "version": "current",
+  "sidebar_label": "Kenesis",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "SNS",
+    "permalink": "/FAQ/docs/notes_sns"
+  },
+  "next": {
+    "title": "CloudWAtch",
+    "permalink": "/FAQ/docs/notes_cw"
+  }
+}

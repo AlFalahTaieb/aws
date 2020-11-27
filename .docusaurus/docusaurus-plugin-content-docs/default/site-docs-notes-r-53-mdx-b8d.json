@@ -1,0 +1,21 @@
+{
+  "unversionedId": "notes_r53",
+  "id": "notes_r53",
+  "isDocsHomePage": false,
+  "title": "Route 53",
+  "description": "export const Quote = ({ children, color }) => (",
+  "source": "@site/docs/notes_r53.mdx",
+  "slug": "/notes_r53",
+  "permalink": "/FAQ/docs/notes_r53",
+  "version": "current",
+  "sidebar_label": "Route 53",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "ElastiCache",
+    "permalink": "/FAQ/docs/notes_ec"
+  },
+  "next": {
+    "title": "CloudFront",
+    "permalink": "/FAQ/docs/notes_cf"
+  }
+}

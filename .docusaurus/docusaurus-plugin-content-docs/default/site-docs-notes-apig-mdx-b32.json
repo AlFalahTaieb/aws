@@ -1,0 +1,21 @@
+{
+  "unversionedId": "notes_apig",
+  "id": "notes_apig",
+  "isDocsHomePage": false,
+  "title": "API Gateway",
+  "description": "export const Quote = ({ children, color }) => (",
+  "source": "@site/docs/notes_apig.mdx",
+  "slug": "/notes_apig",
+  "permalink": "/FAQ/docs/notes_apig",
+  "version": "current",
+  "sidebar_label": "API Gateway",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "DynamoDB",
+    "permalink": "/FAQ/docs/notes_dynamodb"
+  },
+  "next": {
+    "title": "Cognito",
+    "permalink": "/FAQ/docs/notes_cognito"
+  }
+}

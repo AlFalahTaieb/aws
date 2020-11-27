@@ -1,0 +1,21 @@
+{
+  "unversionedId": "notes_cli_sdk",
+  "id": "notes_cli_sdk",
+  "isDocsHomePage": false,
+  "title": "CLI & SDK",
+  "description": "export const Highlight = ({ children, color }) => (",
+  "source": "@site/docs/notes_cli_sdk.mdx",
+  "slug": "/notes_cli_sdk",
+  "permalink": "/FAQ/docs/notes_cli_sdk",
+  "version": "current",
+  "sidebar_label": "CLI & SDK",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "DataSync",
+    "permalink": "/FAQ/docs/notes_datasync"
+  },
+  "next": {
+    "title": "RDS",
+    "permalink": "/FAQ/docs/notes_rds"
+  }
+}

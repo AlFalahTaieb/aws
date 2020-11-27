@@ -1,0 +1,12 @@
+{
+  "unversionedId": "ec2",
+  "id": "ec2",
+  "isDocsHomePage": false,
+  "title": "Amazon EC2 FAQs",
+  "description": "Q: What is Amazon Elastic Compute Cloud (Amazon EC2)?",
+  "source": "@site/docs/ec2.md",
+  "slug": "/ec2",
+  "permalink": "/FAQ/docs/ec2",
+  "version": "current",
+  "sidebar_label": "Amazon EC2 FAQs"
+}

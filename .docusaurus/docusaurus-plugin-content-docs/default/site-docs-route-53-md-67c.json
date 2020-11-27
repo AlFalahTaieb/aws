@@ -1,0 +1,12 @@
+{
+  "unversionedId": "route53",
+  "id": "route53",
+  "isDocsHomePage": false,
+  "title": "Amazon Route53 FAQs",
+  "description": "Q. What is a Domain Name System (DNS) Service?",
+  "source": "@site/docs/route53.md",
+  "slug": "/route53",
+  "permalink": "/FAQ/docs/route53",
+  "version": "current",
+  "sidebar_label": "Amazon Route53 FAQs"
+}

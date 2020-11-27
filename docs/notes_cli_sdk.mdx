@@ -1,0 +1,60 @@
+---
+id: notes_cli_sdk
+title: CLI & SDK 
+sidebar_label: CLI & SDK 
+---
+
+
+export const Highlight = ({ children, color }) => (
+	<span
+		style={{
+			backgroundColor: "#FF9900",
+			borderRadius: "5px",
+			color: "#fff",
+			padding: "0.1rem",
+		}}
+	>
+		{children}
+	</span>
+)
+
+export const Quote = ({ children, color }) => (
+	<span
+		style={{
+			backgroundColor: "#5a5a5a",
+			borderRadius: "7px",
+			color: "#FF9900",
+			padding: "0.3rem",
+		}}
+	>
+		{children}
+	</span>
+)
+
+1. **Never ever share your access key and code with others.**
+2. **Never ever use your personal credentials on EC2, create another IAM user instead.**
+
+```bash
+# Configure AWS
+# This would create ~/.ssh with details
+$ aws configure
+
+# Configure AWS for a profile
+$ aws configure --profile devdude
+
+# S3 commands
+$ aws s3 ls
+$ aws s3 ls s3://mybucket
+$ aws s3 mb s3://mynewbucket
+$ aws s3 ls --profile devdude # using a profile
+```
+
+3. You can fetch metadata about an EC2 from `http://169.254.169.254/latest/meta-data`
+
+4. If you don't specify a region, the SDKs would default to `us-east-1`.
+
+5. It's recommended to use default credential provider chain.
+
+6. Any API that fails because of too many calls need to be retried with **Exponential Backoff**.
+
+7. These apply to rate-limited API and the retry mechanism is included in SDK API calls.

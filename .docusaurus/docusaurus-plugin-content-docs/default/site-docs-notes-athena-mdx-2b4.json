@@ -1,0 +1,21 @@
+{
+  "unversionedId": "notes_athena",
+  "id": "notes_athena",
+  "isDocsHomePage": false,
+  "title": "Athena",
+  "description": "export const Highlight = ({ children, color }) => (",
+  "source": "@site/docs/notes_athena.mdx",
+  "slug": "/notes_athena",
+  "permalink": "/FAQ/docs/notes_athena",
+  "version": "current",
+  "sidebar_label": "Athena",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Storage Extras",
+    "permalink": "/FAQ/docs/notes_storage_ex"
+  },
+  "next": {
+    "title": "DataSync",
+    "permalink": "/FAQ/docs/notes_datasync"
+  }
+}

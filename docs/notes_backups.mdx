@@ -1,0 +1,45 @@
+---
+id: notes_backups
+title: Backups
+sidebar_label: Backups
+author: Taieb
+---
+
+import Button from "@material-ui/core/Button"
+import { withStyles } from "@material-ui/core/styles";
+
+export const StyledButton = withStyles({
+	root: {
+		background: "linear-gradient(315deg, #fc9842 0%, #fe5f75 74%)",
+		borderRadius: 7,
+		border: 0,
+		color: "inherit",
+		height: 35,
+		padding: "0 30px",
+		boxShadow: "0 3px 5px 2px rgba(255, 105, 135, .3)",
+	},
+	label: {
+		textTransform: "capitalize",
+	},
+})(Button)
+
+
+1. Automated backups
+    - On by default with a 7-day retention period
+    - They can go back to any point in time up to 35 days (retention period)
+    - Transaction logs are backed-by RDS every 5 minutes
+    - This will take a full daily snapshot and will also store any transaction logs throughout the day
+    - When you do a recovery, AWS will first choose the most recent daily backup, and then apply transaction logs relevant to that day
+    - This allows you to do a point in time recovery down to a second, within the retention period
+    - Automated backups are taken by default. The backup data is stored in S3 and you get free storage space equal to the size of your database.
+    - Backups are taken within a defined window during which the users might expect a latency
+    - Any changes to backup window take place immediately
+2. Database snapshots
+    - They are done manually and are stored even after you delete the original RDS instance
+    - Retention of backup as per user
+
+
+
+
+
+<StyledButton href="/docs/notes_rds">Back to RDS</StyledButton>

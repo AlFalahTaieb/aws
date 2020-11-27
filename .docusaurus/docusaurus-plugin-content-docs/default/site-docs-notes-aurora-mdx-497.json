@@ -1,0 +1,12 @@
+{
+  "unversionedId": "notes_Aurora",
+  "id": "notes_Aurora",
+  "isDocsHomePage": false,
+  "title": "Aurora",
+  "description": "export const StyledButton = withStyles({",
+  "source": "@site/docs/notes_aurora.mdx",
+  "slug": "/notes_Aurora",
+  "permalink": "/FAQ/docs/notes_Aurora",
+  "version": "current",
+  "sidebar_label": "Aurora"
+}

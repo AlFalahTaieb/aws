@@ -1,0 +1,21 @@
+{
+  "unversionedId": "notes_vpc",
+  "id": "notes_vpc",
+  "isDocsHomePage": false,
+  "title": "VPC",
+  "description": "export const Quote = ({ children, color }) => (",
+  "source": "@site/docs/notes_vpc.mdx",
+  "slug": "/notes_vpc",
+  "permalink": "/FAQ/docs/notes_vpc",
+  "version": "current",
+  "sidebar_label": "VPC",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Shield & WAF",
+    "permalink": "/FAQ/docs/notes_sw"
+  },
+  "next": {
+    "title": "ECS",
+    "permalink": "/FAQ/docs/notes_ecs"
+  }
+}

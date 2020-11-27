@@ -1,0 +1,20 @@
+{
+  "unversionedId": "notes_os",
+  "id": "notes_os",
+  "isDocsHomePage": false,
+  "title": "Other Services",
+  "description": "export const Quote = ({ children, color }) => (",
+  "source": "@site/docs/notes_os.mdx",
+  "slug": "/notes_os",
+  "permalink": "/FAQ/docs/notes_os",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "SWF & Step Function",
+    "permalink": "/FAQ/docs/notes_ss"
+  },
+  "next": {
+    "title": "Disaster Recovery",
+    "permalink": "/FAQ/docs/notes_dr"
+  }
+}

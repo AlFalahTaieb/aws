@@ -1,0 +1,246 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/FAQ/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/FAQ/docs",
+          "mainDocId": "start",
+          "docs": [
+            {
+              "id": "aks",
+              "path": "/FAQ/docs/aks"
+            },
+            {
+              "id": "doc5",
+              "path": "/FAQ/docs/doc5"
+            },
+            {
+              "id": "ebs",
+              "path": "/FAQ/docs/ebs"
+            },
+            {
+              "id": "ec2",
+              "path": "/FAQ/docs/ec2"
+            },
+            {
+              "id": "notes",
+              "path": "/FAQ/docs/notes"
+            },
+            {
+              "id": "notes_apig",
+              "path": "/FAQ/docs/notes_apig"
+            },
+            {
+              "id": "notes_asg",
+              "path": "/FAQ/docs/notes_asg"
+            },
+            {
+              "id": "notes_athena",
+              "path": "/FAQ/docs/notes_athena"
+            },
+            {
+              "id": "notes_Aurora",
+              "path": "/FAQ/docs/notes_Aurora"
+            },
+            {
+              "id": "notes_backups",
+              "path": "/FAQ/docs/notes_backups"
+            },
+            {
+              "id": "notes_bs",
+              "path": "/FAQ/docs/notes_bs"
+            },
+            {
+              "id": "notes_cf",
+              "path": "/FAQ/docs/notes_cf"
+            },
+            {
+              "id": "notes_cfm",
+              "path": "/FAQ/docs/notes_cfm"
+            },
+            {
+              "id": "notes_cli_sdk",
+              "path": "/FAQ/docs/notes_cli_sdk"
+            },
+            {
+              "id": "notes_cloudtrail",
+              "path": "/FAQ/docs/notes_cloudtrail"
+            },
+            {
+              "id": "notes_cognito",
+              "path": "/FAQ/docs/notes_cognito"
+            },
+            {
+              "id": "notes_ct",
+              "path": "/FAQ/docs/notes_ct"
+            },
+            {
+              "id": "notes_cw",
+              "path": "/FAQ/docs/notes_cw"
+            },
+            {
+              "id": "notes_databases",
+              "path": "/FAQ/docs/notes_databases"
+            },
+            {
+              "id": "notes_datasync",
+              "path": "/FAQ/docs/notes_datasync"
+            },
+            {
+              "id": "notes_dr",
+              "path": "/FAQ/docs/notes_dr"
+            },
+            {
+              "id": "notes_dynamodb",
+              "path": "/FAQ/docs/notes_dynamodb"
+            },
+            {
+              "id": "notes_ebs_efs",
+              "path": "/FAQ/docs/notes_ebs_efs"
+            },
+            {
+              "id": "notes_ec",
+              "path": "/FAQ/docs/notes_ec"
+            },
+            {
+              "id": "notes_ec2",
+              "path": "/FAQ/docs/notes_ec2"
+            },
+            {
+              "id": "notes_ecs",
+              "path": "/FAQ/docs/notes_ecs"
+            },
+            {
+              "id": "notes_elb",
+              "path": "/FAQ/docs/notes_elb"
+            },
+            {
+              "id": "notes_Encryption",
+              "path": "/FAQ/docs/notes_Encryption"
+            },
+            {
+              "id": "notes_fp",
+              "path": "/FAQ/docs/notes_fp"
+            },
+            {
+              "id": "notes_fsx",
+              "path": "/FAQ/docs/notes_fsx"
+            },
+            {
+              "id": "notes_hpc",
+              "path": "/FAQ/docs/notes_hpc"
+            },
+            {
+              "id": "notes_iam",
+              "path": "/FAQ/docs/notes_iam"
+            },
+            {
+              "id": "notes_kenesis",
+              "path": "/FAQ/docs/notes_kenesis"
+            },
+            {
+              "id": "notes_kms",
+              "path": "/FAQ/docs/notes_kms"
+            },
+            {
+              "id": "notes_lambda",
+              "path": "/FAQ/docs/notes_lambda"
+            },
+            {
+              "id": "notes_multiaz",
+              "path": "/FAQ/docs/notes_multiaz"
+            },
+            {
+              "id": "notes_os",
+              "path": "/FAQ/docs/notes_os"
+            },
+            {
+              "id": "notes_r53",
+              "path": "/FAQ/docs/notes_r53"
+            },
+            {
+              "id": "notes_rds",
+              "path": "/FAQ/docs/notes_rds"
+            },
+            {
+              "id": "notes_redshift",
+              "path": "/FAQ/docs/notes_redshift"
+            },
+            {
+              "id": "notes_rr",
+              "path": "/FAQ/docs/notes_rr"
+            },
+            {
+              "id": "notes_s3",
+              "path": "/FAQ/docs/notes_s3"
+            },
+            {
+              "id": "notes_sg",
+              "path": "/FAQ/docs/notes_sg"
+            },
+            {
+              "id": "notes_sns",
+              "path": "/FAQ/docs/notes_sns"
+            },
+            {
+              "id": "notes_sqs",
+              "path": "/FAQ/docs/notes_sqs"
+            },
+            {
+              "id": "notes_ss",
+              "path": "/FAQ/docs/notes_ss"
+            },
+            {
+              "id": "notes_ssm",
+              "path": "/FAQ/docs/notes_ssm"
+            },
+            {
+              "id": "notes_storage_ex",
+              "path": "/FAQ/docs/notes_storage_ex"
+            },
+            {
+              "id": "notes_sw",
+              "path": "/FAQ/docs/notes_sw"
+            },
+            {
+              "id": "notes_vpc",
+              "path": "/FAQ/docs/notes_vpc"
+            },
+            {
+              "id": "notes_vpc_n",
+              "path": "/FAQ/docs/notes_vpc_n"
+            },
+            {
+              "id": "notes_vpc_r1",
+              "path": "/FAQ/docs/notes_vpc_r1"
+            },
+            {
+              "id": "raz",
+              "path": "/FAQ/docs/raz"
+            },
+            {
+              "id": "route53",
+              "path": "/FAQ/docs/route53"
+            },
+            {
+              "id": "sqs",
+              "path": "/FAQ/docs/sqs"
+            },
+            {
+              "id": "start",
+              "path": "/FAQ/docs/start"
+            },
+            {
+              "id": "vpc",
+              "path": "/FAQ/docs/vpc"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

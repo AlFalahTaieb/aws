@@ -1,0 +1,21 @@
+{
+  "unversionedId": "notes_rds",
+  "id": "notes_rds",
+  "isDocsHomePage": false,
+  "title": "RDS",
+  "description": "export const Highlight = ({ children, color }) => (",
+  "source": "@site/docs/notes_rds.mdx",
+  "slug": "/notes_rds",
+  "permalink": "/FAQ/docs/notes_rds",
+  "version": "current",
+  "sidebar_label": "RDS",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "CLI & SDK",
+    "permalink": "/FAQ/docs/notes_cli_sdk"
+  },
+  "next": {
+    "title": "Redshift",
+    "permalink": "/FAQ/docs/notes_redshift"
+  }
+}

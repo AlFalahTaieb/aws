@@ -1,0 +1,141 @@
+---
+id: notes_rds
+title: RDS
+sidebar_label: RDS
+---
+
+
+export const Highlight = ({ children, color }) => (
+	<span
+		style={{
+			backgroundColor: "#FF9900",
+			borderRadius: "5px",
+			color: "#fff",
+			padding: "0.1rem",
+		}}
+	>
+		{children}
+	</span>
+)
+
+export const Quote = ({ children, color }) => (
+	<span
+		style={{
+			backgroundColor: "#5a5a5a",
+			borderRadius: "7px",
+			color: "#FF9900",
+			padding: "0.3rem",
+		}}
+	>
+		{children}
+	</span>
+)
+
+
+## I. Introduction
+
+1. RDBMS in AWS is called RDS (Relational Database Service)
+2. Used in OLTP scenarios.
+3. DB instance is the building block.
+4. Only pay for the instances that are active.
+5. RDS includes SQL Server, Oracle, MySQL, MariaDB, PgSQL and Amazon Aurora.
+6. Key features of RDS include:
+    - Automatic provisioning, OS patching
+    - Continuous backups and restore to specific timestamp
+    - Monitoring dashboards
+    - Multi-AZ for disaster recovery
+    - Read-replicas for performance
+    - Storage backed by EBS (GP2 or IO1)
+7. RDS runs on virtual machines but you can't log into them.
+    - Patching is Amazon's responsibility
+    - It is NOT serverless (except Aurora)
+8. AWS also provides data warehousing with tools like Cognos, JasperSoft, SQL Server Reporting Services, Oracle, Hyperion, SAP NetWeaver. 
+    - These are used to pull in very large and complex data sets. Usually used by management to do queries on data
+    - Redshift is AWS' data warehousing solution
+9. It's important to identify what kind of database you need based on use case — OLAP vs OLTP.  
+10. ElastiCache is a web service that makes it easy to deploy, operate and scale in-memory cache in the cloud. The service improves the performance of web apps. ElastiCache supports two open-source in-memory caching engines:
+    - redis
+    - memcacheD
+11. RDS supports encryption at rest and is done using KMS. Once your RDS instance is encrypted, the data stored at rest in the underlying storage is encrypted along with its automated backups, read-replicas etc
+12. For MS SQL, the max size RDS volume is 16 TB
+13. Regular metrics available by default including CPU utilization, database connections and freeable memory
+
+## II. RDS for SA
+
+1. Operations
+    1. Small downtime when failover/maintenance happens
+    2. Scaling in read replicas/EC2 instance/restore EBS implies manual interventions
+2. Security
+    1. AWS responsible for OS security
+    2. We are responsible for setting up KMS, security groups, IAM policies and user auth
+3. Reliability: Multi AZ feature, failover in case of failures
+4. Performance: Depends on EC2 instance type, EBS volume type, ability to add read replicas. Does not auto scale.
+5. Cost: Pay per hour based on provisioned EC2 and EBS
+
+## III. Enhanced Monitoring
+
+1. You are charged for using enhanced monitoring
+2. You can enable "Enhanced Metrics" to capture up to 50 metrics about your RDS instance
+3. Supports all RDS engines
+4. Supports all instance types except `t1.micro` and `m1.small`
+5. You can get a precision of 1s and up to 1 hour back
+6. The metrics are delivered into your CloudWatch account along with RDS dashboard
+7. The metrics can be exported as JSON payloads
+8. Supports metrics like 
+    1. RDS processes
+    2. OS processes
+    3. RDS child processes
+
+## IV. RDS Tips
+
+1. Instances are billed for DB instance hours (per second), storage (per GB per month), IO (per 1 million requests per month), provisioned IOPS, backup storage and data transfer.
+2. RDS purchasing options — on demand and reserved instance
+3. If your client app is caching the DNS of your db service, set a TTL < 30s
+4. You can query error logs, slow query logs and general logs
+5. Multi AZ = sync replication, highly durable
+6. Read replicas = async replication, highly scalable
+7. You can run RDS on-prem using RDS on Outpost or VMware
+8. By default, customers are allowed up to 40 RDS instances
+9. You can use AWS DMS to migrate data to RDS
+10. If you don't specify a maintenance window, RDS would book a 30-min window by default
+11. Not every db engine is available in every region
+12. You can test your db patch update by creating a snapshot of your main instance and restoring from there
+13. While your db instance is stopped, you pay for provisioned storage (including provisioned IOPS) and backup storage but not db instance hours
+14. Backup storage cost more because the backup is replicated across multiple AZs to provide durability
+15. You can use RDS RI to reserve a db instance for a 1-3 year term and get discounts. You can get up to 40 RDS RIs.
+16. You can convert an existing db to RDS RI
+17. You cannot cancel RI and the one-time payment is not refundable
+18. You can modify the compute resources and storage capacity from the RDS console
+19. A db subnet group is a collection of subnets that you may want to designate for your RDS db instances in a VPC. It is strongly recommended to use DNS name to connect to db.
+20. Migration of db from VPC to outside is not supported but vice versa is true
+21. You are responsible for modifying route tables and ACLs to make sure your apps can talk to RDS inside VPC
+22. You can use AWS Config to continuously record configurations changes to RDS db instance
+23. You can have Multi-AZ && Read Replicas simultaneously
+24. You can have multi-AZ for read replicas
+25. Supports push-button scaling (vertical scaling)
+26. <Quote>The recommended storage engine for MySQL is InnoDB. However, in case you require intense, full-text search capability, use MyISAM storage engine instead.</Quote>
+27. RDS proxy is a HA, fully managed database proxy for RDS that can improve scalability by pooling and sharing database connection, improve availability and enhance security. Can add an average latency of 5ms
+28. For creating short-lived tokens, you can use an <Quote>IAM database authentication</Quote>when connecting to a database instance. 
+29. Authentication is handled by `AWSAuthenticationPlugin` — an AWS-provided plugin that works seamlessly with IAM to authenticate your IAM users.
+30. You CANNOT create a cross-region Multi-AZ deployment with RDS.
+31. <Quote>By default, RDS forces SSL connections for all connections.</Quote>
+32. To enable user-access with short-lived credentials, you can use `AWSAuthenticationPlugin`
+33. <Quote>Security patching requires db to be offline for certain time.</Quote>
+34. <Quote>To connect a RDS instance from on-prem server, you'd need to place it in a public subnet. You CANNOT put it in a private subnet and use NAT Gateway.</Quote>
+35. To connect to RDS from an application hosted on-prem
+    1. Make the RDS instance publicly accessible and place it in a public subnet
+    2. Create a security group allowing access from the on-premise public IP to the RDS instance and assign to the RDS instance
+
+## V. Pages
+
+[Databases](notes_databases)
+
+[Backups](notes_backups)
+
+[Multi AZ](notes_multiaz)
+
+[Read Replicas](notes_rr)
+
+[Aurora](notes_aurora)
+
+[Encryption](notes_encryption)

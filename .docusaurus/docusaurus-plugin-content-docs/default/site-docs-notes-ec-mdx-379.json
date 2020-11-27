@@ -1,0 +1,21 @@
+{
+  "unversionedId": "notes_ec",
+  "id": "notes_ec",
+  "isDocsHomePage": false,
+  "title": "ElastiCache",
+  "description": "export const Quote = ({ children, color }) => (",
+  "source": "@site/docs/notes_ec.mdx",
+  "slug": "/notes_ec",
+  "permalink": "/FAQ/docs/notes_ec",
+  "version": "current",
+  "sidebar_label": "ElastiCache",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Cognito",
+    "permalink": "/FAQ/docs/notes_cognito"
+  },
+  "next": {
+    "title": "Route 53",
+    "permalink": "/FAQ/docs/notes_r53"
+  }
+}

@@ -1,0 +1,92 @@
+---
+id: notes_Encryption
+title: Encryption
+sidebar_label: Encryption 
+author: Taieb
+---
+
+import Button from "@material-ui/core/Button";
+import { withStyles } from "@material-ui/core/styles";
+
+export const Highlight = ({ children, color }) => (
+	<span
+		style={{
+			backgroundColor: "#FF9900",
+			borderRadius: "5px",
+			color: "#fff",
+			padding: "0.1rem",
+		}}
+	>
+		{children}
+	</span>
+)
+
+export const Quote = ({ children, color }) => (
+	<span
+		style={{
+			backgroundColor: "#5a5a5a",
+			borderRadius: "7px",
+			color: "#FF9900",
+			padding: "0.3rem",
+		}}
+	>
+		{children}
+	</span>
+)
+
+export const StyledButton = withStyles({
+	root: {
+		background: "linear-gradient(315deg, #fc9842 0%, #fe5f75 74%)",
+		borderRadius: 7,
+		border: 0,
+		color: "inherit",
+		height: 35,
+		padding: "0 30px",
+		boxShadow: "0 3px 5px 2px rgba(255, 105, 135, .3)",
+	},
+	label: {
+		textTransform: "capitalize",
+	},
+})(Button)
+
+## I. At-rest encryption
+
+1. Possibility to encrypt the master and read replicas with KMS AES-256.
+2. Encryption has to be defined at launch time.
+3. If the master is not encrypted, the read replicas cannot be encrypted.
+4. Transparent Data Encryption (TDE) available for Oracle and SQL Server.
+
+## II. In-flight encryption
+
+1. SSL certificates to encrypt data to RDS in flight.
+2. To enforce SSL:
+    1. Pgsql: rds.force_ssl=l in the AWS RDS console
+    2. MySQL: within the db, GRANT USAGE ON *.* TO 'mysqluser'@'%' REQUIRE SSL;
+    3. RDS enforces SSL by default
+
+## III. Encrypting RDS backups
+
+1. Snapshots of un-encrypted RDS databases are un-encrypted.
+2. Snapshots of encrypted RDS databases are encrypted.
+3. To encrypt an un-encrypted RDS instance,
+    1. Create a snapshot of the un-encrypted one and enable encryption for the snapshot.
+    2. Restore the db from the newly encrypted sanpshot.
+    3. Move apps to the new encrypted db and delete the old one.
+
+## IV. Security
+
+1. RDS databases are usually deployed within a private subnet, not in a public one.
+2. RDS security works by leveraging security groups (same as EC2) and control which IP/SG can talk to it.
+3. IAM policies control who can manage AWS RDS (through RDS API).
+4. You can use traditional username/password or IAM-based auth to login your db. The latter only works for MySQL and Pgsql.
+    1. Need a token using RDS call.
+    2. It has a lifetime of 15 minutes.
+
+
+<!-- 
+<Button variant="outlined" color="inherit" href="/docs/notes_rds">
+	Back To RDS
+</Button> -->
+
+
+<StyledButton href="/docs/notes_rds">Back to RDS</StyledButton>

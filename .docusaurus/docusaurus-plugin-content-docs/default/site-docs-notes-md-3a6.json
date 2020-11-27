@@ -1,0 +1,17 @@
+{
+  "unversionedId": "notes",
+  "id": "notes",
+  "isDocsHomePage": false,
+  "title": "Notes for AWS Certified Solutions Architect Associate",
+  "description": "Contents",
+  "source": "@site/docs/notes.md",
+  "slug": "/notes",
+  "permalink": "/FAQ/docs/notes",
+  "version": "current",
+  "sidebar_label": "Notes for AWS Certified Solutions Architect Associate",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Five Pillars",
+    "permalink": "/FAQ/docs/notes_fp"
+  }
+}

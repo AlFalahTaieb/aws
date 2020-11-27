@@ -1,0 +1,21 @@
+{
+  "unversionedId": "notes_cw",
+  "id": "notes_cw",
+  "isDocsHomePage": false,
+  "title": "CloudWAtch",
+  "description": "export const Quote = ({ children, color }) => (",
+  "source": "@site/docs/notes_cw.mdx",
+  "slug": "/notes_cw",
+  "permalink": "/FAQ/docs/notes_cw",
+  "version": "current",
+  "sidebar_label": "CloudWAtch",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Kenesis",
+    "permalink": "/FAQ/docs/notes_kenesis"
+  },
+  "next": {
+    "title": "CloudTrail",
+    "permalink": "/FAQ/docs/notes_ct"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "unversionedId": "notes_sns",
+  "id": "notes_sns",
+  "isDocsHomePage": false,
+  "title": "SNS",
+  "description": "export const Quote = ({ children, color }) => (",
+  "source": "@site/docs/notes_sns.mdx",
+  "slug": "/notes_sns",
+  "permalink": "/FAQ/docs/notes_sns",
+  "version": "current",
+  "sidebar_label": "SNS",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "SQS",
+    "permalink": "/FAQ/docs/notes_sqs"
+  },
+  "next": {
+    "title": "Kenesis",
+    "permalink": "/FAQ/docs/notes_kenesis"
+  }
+}

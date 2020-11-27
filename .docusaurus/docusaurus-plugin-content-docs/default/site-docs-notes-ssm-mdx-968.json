@@ -1,0 +1,21 @@
+{
+  "unversionedId": "notes_ssm",
+  "id": "notes_ssm",
+  "isDocsHomePage": false,
+  "title": "SSM",
+  "description": "export const Quote = ({ children, color }) => (",
+  "source": "@site/docs/notes_ssm.mdx",
+  "slug": "/notes_ssm",
+  "permalink": "/FAQ/docs/notes_ssm",
+  "version": "current",
+  "sidebar_label": "SSM",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "KMS",
+    "permalink": "/FAQ/docs/notes_kms"
+  },
+  "next": {
+    "title": "Shield & WAF",
+    "permalink": "/FAQ/docs/notes_sw"
+  }
+}

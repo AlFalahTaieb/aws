@@ -1,0 +1,12 @@
+{
+  "unversionedId": "notes_backups",
+  "id": "notes_backups",
+  "isDocsHomePage": false,
+  "title": "Backups",
+  "description": "export const StyledButton = withStyles({",
+  "source": "@site/docs/notes_backups.mdx",
+  "slug": "/notes_backups",
+  "permalink": "/FAQ/docs/notes_backups",
+  "version": "current",
+  "sidebar_label": "Backups"
+}

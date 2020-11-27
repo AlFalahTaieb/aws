@@ -1,0 +1,21 @@
+{
+  "unversionedId": "notes_bs",
+  "id": "notes_bs",
+  "isDocsHomePage": false,
+  "title": "BeanStalk",
+  "description": "export const Quote = ({ children, color }) => (",
+  "source": "@site/docs/notes_bs.mdx",
+  "slug": "/notes_bs",
+  "permalink": "/FAQ/docs/notes_bs",
+  "version": "current",
+  "sidebar_label": "BeanStalk",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "CloudFront",
+    "permalink": "/FAQ/docs/notes_cf"
+  },
+  "next": {
+    "title": "SQS",
+    "permalink": "/FAQ/docs/notes_sqs"
+  }
+}

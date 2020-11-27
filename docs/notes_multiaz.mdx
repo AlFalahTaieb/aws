@@ -1,0 +1,45 @@
+---
+id: notes_multiaz
+title: Multi AZ
+sidebar_label: Multi AZ
+author: Taieb
+---
+
+import Button from "@material-ui/core/Button"
+import { withStyles } from "@material-ui/core/styles";
+
+export const StyledButton = withStyles({
+	root: {
+		background: "linear-gradient(315deg, #fc9842 0%, #fe5f75 74%)",
+		borderRadius: 7,
+		border: 0,
+		color: "inherit",
+		height: 35,
+		padding: "0 30px",
+		boxShadow: "0 3px 5px 2px rgba(255, 105, 135, .3)",
+	},
+	label: {
+		textTransform: "capitalize",
+	},
+})(Button)
+
+
+1. Multi AZ allows you to have an exact copy of your production database in another Availability Zone.
+2. It is active-passive
+3. AWS handles the replication for you, so when your production database is written to, it's automatically synced with the standby (same DNS name).
+4. In the case of failure/maintenance, RDS would automatically switch to the standby without admin intervention in case of following events:
+    1. AZ outage
+    2. Primary DB instance fails
+    3. DB instance server type is changed
+    4. OS is going through patching
+    5. Manual failover was initiated
+
+5. Its main objective is disaster-recovery than performance improvements, for which you'd need read-replicas.
+6. Read replicas can be set as multi-AZ. Aurora has Multi-AZ in-built by default.
+7. **Multi-AZ cannot serve read requests, they are not meant to be used as read replicas. They are only meant to be used as stand-by (except Aurora which can be both multi-AZ and read replica at the same time).**
+8. Failover is automatically handled by RDS and it will flip the CNAME record to point to the standby instead.
+9. You can create a read replica as a Multi-AZ DB instance. Amazon RDS creates a standby of your replica in another Availability Zone for failover support for the replica. Creating your read replica as a Multi-AZ DB instance is independent of whether the source database is a Multi-AZ DB instance.
+
+
+
+<StyledButton href="/docs/notes_rds">Back to RDS</StyledButton>

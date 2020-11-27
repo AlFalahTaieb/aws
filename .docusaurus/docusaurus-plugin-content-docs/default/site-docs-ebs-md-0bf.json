@@ -1,0 +1,12 @@
+{
+  "unversionedId": "ebs",
+  "id": "ebs",
+  "isDocsHomePage": false,
+  "title": "Amazon EBS FAQs",
+  "description": "Q: What happens to my data when an Amazon EC2 instance terminates?",
+  "source": "@site/docs/EBS.md",
+  "slug": "/ebs",
+  "permalink": "/FAQ/docs/ebs",
+  "version": "current",
+  "sidebar_label": "Amazon EBS FAQs"
+}

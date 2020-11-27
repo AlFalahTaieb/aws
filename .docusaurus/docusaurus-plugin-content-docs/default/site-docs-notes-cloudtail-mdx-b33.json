@@ -1,0 +1,12 @@
+{
+  "unversionedId": "notes_cloudtrail",
+  "id": "notes_cloudtrail",
+  "isDocsHomePage": false,
+  "title": "CloudTrail",
+  "description": "export const Quote = ({ children, color }) => (",
+  "source": "@site/docs/notes_cloudtail.mdx",
+  "slug": "/notes_cloudtrail",
+  "permalink": "/FAQ/docs/notes_cloudtrail",
+  "version": "current",
+  "sidebar_label": "CloudTrail"
+}

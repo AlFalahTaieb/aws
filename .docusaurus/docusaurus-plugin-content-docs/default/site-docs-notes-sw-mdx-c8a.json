@@ -1,0 +1,21 @@
+{
+  "unversionedId": "notes_sw",
+  "id": "notes_sw",
+  "isDocsHomePage": false,
+  "title": "Shield & WAF",
+  "description": "export const Quote = ({ children, color }) => (",
+  "source": "@site/docs/notes_sw.mdx",
+  "slug": "/notes_sw",
+  "permalink": "/FAQ/docs/notes_sw",
+  "version": "current",
+  "sidebar_label": "Shield & WAF",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "SSM",
+    "permalink": "/FAQ/docs/notes_ssm"
+  },
+  "next": {
+    "title": "VPC",
+    "permalink": "/FAQ/docs/notes_vpc"
+  }
+}

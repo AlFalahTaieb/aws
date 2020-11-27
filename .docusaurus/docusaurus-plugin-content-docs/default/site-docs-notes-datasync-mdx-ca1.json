@@ -1,0 +1,21 @@
+{
+  "unversionedId": "notes_datasync",
+  "id": "notes_datasync",
+  "isDocsHomePage": false,
+  "title": "DataSync",
+  "description": "export const Highlight = ({ children, color }) => (",
+  "source": "@site/docs/notes_datasync.mdx",
+  "slug": "/notes_datasync",
+  "permalink": "/FAQ/docs/notes_datasync",
+  "version": "current",
+  "sidebar_label": "DataSync",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Athena",
+    "permalink": "/FAQ/docs/notes_athena"
+  },
+  "next": {
+    "title": "CLI & SDK",
+    "permalink": "/FAQ/docs/notes_cli_sdk"
+  }
+}

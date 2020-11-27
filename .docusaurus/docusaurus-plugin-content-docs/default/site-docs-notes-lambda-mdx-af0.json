@@ -1,0 +1,21 @@
+{
+  "unversionedId": "notes_lambda",
+  "id": "notes_lambda",
+  "isDocsHomePage": false,
+  "title": "Lambda",
+  "description": "export const Quote = ({ children, color }) => (",
+  "source": "@site/docs/notes_lambda.mdx",
+  "slug": "/notes_lambda",
+  "permalink": "/FAQ/docs/notes_lambda",
+  "version": "current",
+  "sidebar_label": "Lambda",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Redshift",
+    "permalink": "/FAQ/docs/notes_redshift"
+  },
+  "next": {
+    "title": "DynamoDB",
+    "permalink": "/FAQ/docs/notes_dynamodb"
+  }
+}

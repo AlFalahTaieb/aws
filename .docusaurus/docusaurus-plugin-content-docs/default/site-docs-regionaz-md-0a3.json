@@ -1,0 +1,21 @@
+{
+  "unversionedId": "raz",
+  "id": "raz",
+  "isDocsHomePage": false,
+  "title": "Regions & AZ",
+  "description": "1. AWS has regions all around the world. A region is a cluster of AZs.",
+  "source": "@site/docs/regionaz.md",
+  "slug": "/raz",
+  "permalink": "/FAQ/docs/raz",
+  "version": "current",
+  "sidebar_label": "Regions & AZ",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Getting Started 🏎️",
+    "permalink": "/FAQ/docs/start"
+  },
+  "next": {
+    "title": "Security Groups",
+    "permalink": "/FAQ/docs/notes_sg"
+  }
+}

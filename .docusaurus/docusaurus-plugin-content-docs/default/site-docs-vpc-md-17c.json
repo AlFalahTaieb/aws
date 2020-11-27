@@ -1,0 +1,12 @@
+{
+  "unversionedId": "vpc",
+  "id": "vpc",
+  "isDocsHomePage": false,
+  "title": "Amazon VPC FAQs",
+  "description": "Q. What is Amazon Virtual Private Cloud?",
+  "source": "@site/docs/vpc.md",
+  "slug": "/vpc",
+  "permalink": "/FAQ/docs/vpc",
+  "version": "current",
+  "sidebar_label": "Amazon VPC FAQs"
+}

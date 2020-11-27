@@ -1,0 +1,12 @@
+{
+  "unversionedId": "aks",
+  "id": "aks",
+  "isDocsHomePage": false,
+  "title": "Amazon Kinesis Data Streams FAQs",
+  "description": "Q: What happens to my data when an Amazon EC2 instance terminates?",
+  "source": "@site/docs/aks.md",
+  "slug": "/aks",
+  "permalink": "/FAQ/docs/aks",
+  "version": "current",
+  "sidebar_label": "Amazon Kinesis Data Streams FAQs"
+}

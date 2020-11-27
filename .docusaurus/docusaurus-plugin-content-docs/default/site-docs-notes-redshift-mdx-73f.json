@@ -1,0 +1,21 @@
+{
+  "unversionedId": "notes_redshift",
+  "id": "notes_redshift",
+  "isDocsHomePage": false,
+  "title": "Redshift",
+  "description": "export let Quote = ({ children, color }) => (",
+  "source": "@site/docs/notes_redshift.mdx",
+  "slug": "/notes_redshift",
+  "permalink": "/FAQ/docs/notes_redshift",
+  "version": "current",
+  "sidebar_label": "Redshift",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "RDS",
+    "permalink": "/FAQ/docs/notes_rds"
+  },
+  "next": {
+    "title": "Lambda",
+    "permalink": "/FAQ/docs/notes_lambda"
+  }
+}

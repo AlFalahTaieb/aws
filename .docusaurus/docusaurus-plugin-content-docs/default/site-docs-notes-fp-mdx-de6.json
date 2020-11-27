@@ -1,0 +1,20 @@
+{
+  "unversionedId": "notes_fp",
+  "id": "notes_fp",
+  "isDocsHomePage": false,
+  "title": "Five Pillars",
+  "description": "export const Quote = ({ children, color }) => (",
+  "source": "@site/docs/notes_fp.mdx",
+  "slug": "/notes_fp",
+  "permalink": "/FAQ/docs/notes_fp",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "HPC",
+    "permalink": "/FAQ/docs/notes_hpc"
+  },
+  "next": {
+    "title": "Notes for AWS Certified Solutions Architect Associate",
+    "permalink": "/FAQ/docs/notes"
+  }
+}

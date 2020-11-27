@@ -1,0 +1,112 @@
+---
+id: notes_fp
+title: Five Pillars
+author: Taieb
+---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+export const Quote = ({ children, color }) => (
+	<span
+		style={{
+			backgroundColor: "#5a5a5a",
+			borderRadius: "8px",
+			color: "#FF9900",
+			padding: "0.21rem",
+		}}
+	>
+		{children}
+	</span>
+)
+
+<!-- ![exp AWS](../src/media/exp.png) -->
+## General guiding principles
+
+1. Stop guessing your capacity needs
+2. Test systems at production scale
+3. Automate to make architectural experimentation easier
+4. Allow for evolutionary architectures (changing requirements)
+5. Drive architectures using data
+6. Improve through game days e.g. simulate apps for flash sale days
+
+## I. Operational Excellence
+
+1. Includes the ability to run and monitor systems and deliver business value and to continually improve supporting processes and procedures. 
+2. Design principles
+    1. Perform operations as a code (IaaS)
+    2. Annotate docs (Auto docs after every build)
+    3. Make frequent, small, reversible changes (push small and frequently)
+    4. Refine operations procedures frequently
+    5. Anticipate failure
+    6. Learn from all operational failures
+
+3. AWS operational excellence
+    1. Prepare — CloudFormation, Config
+    2. Operate — CloudFormation, Config, CloudTrail, CoudWatch, X-Ray
+    3. Evolve — CloudFormation, CodeBuild, CodePipeline, CodeDeploy
+
+## II. Security
+
+1. Includes the ability to protect information, systems and assets while delivering business values through risk assessment and mitigation strategies. 
+2. Design principles
+    1. Implement a strong identity foundation
+    2. Enable traceability
+    3. Apply security at all layers (edge, subnet, ALB, VPC)
+    4. Automate security best practices
+    5. Protect data in transit and at rest
+    6. Keep people away from data
+    7. Prepare for security events
+
+3. AWS services
+    1. IAM — IAM, STS, Orgs
+    2. Detective controls — Config, CloudTrail, CloudWatch
+    3. Infra — CloudFront, VPC, WAF, Shield, Inspector
+    4. Data protection — KMS, S3, ELB
+    5. Incident response — IAM, CloudFormation
+
+## III. Reliability
+
+1. Ability to recover from infra or service disruptions, dynamically acquire computing resources to meet demand, and mitigate disruptions, transient network issues.
+2. Design principles
+    1. Test recovery procedure (simulate failure scenarios)
+    2. Automatically recover from failure
+    3. Scale horizontally to increase aggregate system availability
+    4. Stop guessing capacity (never under-provision)
+    5. Manage change in automation
+
+3. AWS
+    1. Foundations — IAM, VPC, Service Limits, Trusted Advisor
+    2. Change Management — Auto Scaling, CloudWatch, CLoudTrail, Config
+    3. Failure Management — Backups, CloudFormation, S3, Glacier, Route 53
+
+## IV. Performance Efficiency
+
+1. Includes the ability to use computing resources efficiently to meet system requirements and to maintain that efficiency as demand changes and technology evolve.
+2. Design principles
+    1. Democratize advanced technologies
+    2. Go global in minutes
+    3. Use serverless as much as you can
+    4. Experiment more often
+    5. Mechanical sympathy (be on top of AWS services)
+
+3. AWS services
+    1. Selection (ASG, Lambda, EBS, S3, RDS)
+    2. Review (CloudFormation, AWS news blog)
+    3. Monitoring (CloudWatch)
+    4. Tradeoffs (RDS vs Aurora, S3 vs Glacier, Aurora vs ElastiCache)
+
+## V. Cost optimization
+
+1. Run systems to deliver business value at the lowest price point.
+2. Design principles
+    1. Adopt a consumption mode (pay per use)
+    2. Measure overall efficiency
+    3. Stop spending on data center operations
+    4. Analyze and attribute expenses e.g. use tags
+    5. Use managed and application level services to reduce cost of ownership
+
+3. AWS services
+    1. Expenditure awareness — AWS budgets, Cost and usage report, Cost explorer
+    2. Cost-effective resources — Spot vs Reserved vs Glacier
+    3. Matching supply and demand —  ASG
+    4. Optimize over time — Trusted Advisor

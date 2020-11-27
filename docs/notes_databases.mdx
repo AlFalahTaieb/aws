@@ -1,0 +1,64 @@
+---
+id: notes_databases
+title: Databases
+sidebar_label: Databases
+author: Taieb
+---
+
+import Button from "@material-ui/core/Button"
+import { withStyles } from "@material-ui/core/styles";
+
+export const StyledButton = withStyles({
+	root: {
+		background: "linear-gradient(315deg, #fc9842 0%, #fe5f75 74%)",
+		borderRadius: 7,
+		border: 0,
+		color: "inherit",
+		height: 35,
+		padding: "0 30px",
+		boxShadow: "0 3px 5px 2px rgba(255, 105, 135, .3)",
+	},
+	label: {
+		textTransform: "capitalize",
+	},
+})(Button)
+
+1. Choosing the right database
+
+   1. Read-heavy, write-heavy or balanced workload?
+   2. Throughput needs? Will it change gradually or fluctuate in bursts?
+   3. How much data to store and for how long? Will it grow? Average object size?
+   4. How are they accessed?
+   5. Data durability? Source of truth?
+   6. Latency requirements? Concurrent users?
+   7. Data model? Structured vs unstructured?
+   8. Strong schema? Flexible schema? Reporting?
+   9. License cost? Switch to cloud native?
+
+2. RDBMS
+
+   1. SQL and OLTP
+   2. RDS, Aurora (great for joins)
+   3. Tabular and normalized data
+
+3. NoSQL
+
+   1. DynamoDB, ElastiCache, Neptune
+   2. No joins
+
+4. Object store
+
+   1. S3 for big objects
+   2. Glacier (for backup)
+
+5. Data warehouse
+
+   1. Redshift (OLAP)
+   2. Athena
+
+6. Search: ES for text and unstructured data
+
+
+
+
+<StyledButton href="/docs/notes_rds">Back to RDS</StyledButton>

@@ -1,0 +1,12 @@
+{
+  "unversionedId": "notes_rr",
+  "id": "notes_rr",
+  "isDocsHomePage": false,
+  "title": "Read Replicas",
+  "description": "export const StyledButton = withStyles({",
+  "source": "@site/docs/notes_rr.mdx",
+  "slug": "/notes_rr",
+  "permalink": "/FAQ/docs/notes_rr",
+  "version": "current",
+  "sidebar_label": "Read Replicas"
+}

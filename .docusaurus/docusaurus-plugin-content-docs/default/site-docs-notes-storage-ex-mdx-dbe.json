@@ -1,0 +1,21 @@
+{
+  "unversionedId": "notes_storage_ex",
+  "id": "notes_storage_ex",
+  "isDocsHomePage": false,
+  "title": "Storage Extras",
+  "description": "export const Highlight = ({ children, color }) => (",
+  "source": "@site/docs/notes_storage_ex.mdx",
+  "slug": "/notes_storage_ex",
+  "permalink": "/FAQ/docs/notes_storage_ex",
+  "version": "current",
+  "sidebar_label": "Storage Extras",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "S3",
+    "permalink": "/FAQ/docs/notes_s3"
+  },
+  "next": {
+    "title": "Athena",
+    "permalink": "/FAQ/docs/notes_athena"
+  }
+}

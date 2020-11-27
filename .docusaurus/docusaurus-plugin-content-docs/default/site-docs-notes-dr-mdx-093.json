@@ -1,0 +1,20 @@
+{
+  "unversionedId": "notes_dr",
+  "id": "notes_dr",
+  "isDocsHomePage": false,
+  "title": "Disaster Recovery",
+  "description": "export const Quote = ({ children, color }) => (",
+  "source": "@site/docs/notes_dr.mdx",
+  "slug": "/notes_dr",
+  "permalink": "/FAQ/docs/notes_dr",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Other Services",
+    "permalink": "/FAQ/docs/notes_os"
+  },
+  "next": {
+    "title": "HPC",
+    "permalink": "/FAQ/docs/notes_hpc"
+  }
+}

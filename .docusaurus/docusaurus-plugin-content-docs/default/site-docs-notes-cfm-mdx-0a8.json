@@ -1,0 +1,20 @@
+{
+  "unversionedId": "notes_cfm",
+  "id": "notes_cfm",
+  "isDocsHomePage": false,
+  "title": "CloudFormation",
+  "description": "export const Quote = ({ children, color }) => (",
+  "source": "@site/docs/notes_cfm.mdx",
+  "slug": "/notes_cfm",
+  "permalink": "/FAQ/docs/notes_cfm",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "ECS",
+    "permalink": "/FAQ/docs/notes_ecs"
+  },
+  "next": {
+    "title": "SWF & Step Function",
+    "permalink": "/FAQ/docs/notes_ss"
+  }
+}
